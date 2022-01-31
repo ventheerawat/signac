@@ -1,0 +1,44 @@
+//defaul theme 
+:root {
+    --color-primary: #FDE400;
+    --color-on-primary:#201C00;
+    
+    --color-primary-container:#FFF9E1;
+    --color-on-primary-container:#201C00;
+    
+    --color-secondary:#006D2E;
+    --color-on-secondary:#FFFFFF;
+    
+    --color-secondary-container:#F5FFF7;
+    --color-on-secondary-container:#002911;
+    
+    --color-default-secondary:#80B697;
+    --color-hover-secondary:#409261;
+    --color-pressed-secondary: #004A1F;
+    
+    --color-tertiary:#EE2E3C;
+    --color-quaternary:#375699;
+    
+    --color-error:#E91E63;
+    --color-on-error:#FFFFFF;
+    --color-error-container:#FCE4EC;
+    --color-on-error-container:#BA1658;
+    
+    --color-success:#41A447;
+    --color-on-success:#FFFFFF;
+    --color-success-container:#C8E6C9;
+    --color-on-success-container:#2D7330;
+    
+    --color-background:#FFFFFF;
+    --color-on-background:#1D1C16;
+    --color-surface:#FFFBE9;
+    --color-on-surface:#1D1C16;
+    --color-surface-disabled:#F5F5F5;
+    --color-on-surface-disabled:#757575;
+    
+    --color-surface-variant:#FFFCF0;
+    --color-on-surface-variant:#4A4739;
+    --color-outline:#7B7768;
+    
+    --color-transparent: transparent;
+}
