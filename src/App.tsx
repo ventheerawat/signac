@@ -23,6 +23,7 @@ function App() {
 
 const [show, showToast] = useState(''); 
 const [alert, showPopUp] = useState(''); 
+const [loader, showLoader] = useState(''); 
 
 const ToastToggle = () => {
   let status = show;
@@ -45,6 +46,16 @@ const PopUpToggle = () => {
     document.body.style.overflow = 'unset';
   }
 }
+
+const LoaderToggle = () => {
+  let status = loader;
+  document.body.style.overflow = 'hidden';
+  showLoader('1');
+  setTimeout(function(){
+    document.body.style.overflow = 'unset';
+    showLoader('0');
+    }, 5000);
+}
   return (
     <div className="App">
       <p className='H1-reg'>SIGNAC Line OA CSS</p>
@@ -63,7 +74,7 @@ const PopUpToggle = () => {
           </div>
         </div>
       </div>
-      <div className='loader-overlay'>
+      <div className={'loader-overlay animated ' + (loader === '1' ? 'fadeIn' : '')}>
         <div className='loader center'><span></span></div>
       </div>
       <div className={'toast-overlay animated ' + (show === '1' ? 'bounceInDown' : '')} >
@@ -82,7 +93,7 @@ const PopUpToggle = () => {
           </div>
         </div>
       </div>
-      <br /><br /><br />
+      <br />
       <Container fixed>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
@@ -1220,7 +1231,7 @@ const PopUpToggle = () => {
                           <Grid container spacing={2} >
                             <Grid item xs={12} md={12}>
                               <Item sx={{ boxShadow: 0 ,textAlign: 'center'}}>
-                              <p>Example Toast</p>
+                              <p>Example Popup</p>
                               <button type="button" className='btn btn-primary' onClick={() => PopUpToggle()}>Show Popup</button>
                               </Item>
                             </Grid>
@@ -1248,6 +1259,45 @@ const PopUpToggle = () => {
                           </div>
                         </div>
                       </div>
+                        `}
+                        </code>
+                      </pre>
+                    </Item>
+                  </Grid>
+                </Grid>
+              </Item>
+            </Grid>
+            <Grid item xs={12}>
+              <Item sx={{ boxShadow: 0 }}>
+                <hr />
+                <h1>Loading </h1>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={12}>
+                    <Item sx={{ boxShadow: 0 }}>
+                      <Grid container spacing={2}>
+                      <Grid item xs={12} md={12}>
+                        <Item sx={{ boxShadow: 0 }}>
+                          
+                          <Grid container spacing={2} >
+                            <Grid item xs={12} md={12}>
+                              <Item sx={{ boxShadow: 0 ,textAlign: 'center'}}>
+                              <p>Example Loading</p>
+                              <button type="button" className='btn btn-primary' onClick={() => LoaderToggle()}>Show Loading</button>
+                              <p>(Example Toast : The Loading will be stopped automatically after 5 seconds)</p>
+                              </Item>
+                            </Grid>
+                          </Grid>
+                        
+                        </Item>
+                      </Grid>
+                    </Grid>
+                      <br />
+                      <pre>
+                        <code className='language-html'>
+                          {`
+                         <div className={'loader-overlay animated ' + (loader === '1' ? 'fadeIn' : '')}>
+                          <div className='loader center'><span></span></div>
+                        </div>
                         `}
                         </code>
                       </pre>
