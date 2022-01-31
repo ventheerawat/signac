@@ -1209,12 +1209,10 @@ const PopUpToggle = () => {
             <Grid item xs={12}>
               <Item sx={{ boxShadow: 0 }}>
                 <hr />
-                <h1>Select </h1>
+                <h1>Pop Up </h1>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={12}>
                     <Item sx={{ boxShadow: 0 }}>
-                      <h3>Default Select</h3>
-                      <p>the native {'<select>'} with custom CSS</p>
                       <Grid container spacing={2}>
                       <Grid item xs={12} md={12}>
                         <Item sx={{ boxShadow: 0 }}>
