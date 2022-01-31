@@ -47,7 +47,7 @@ const PopUpToggle = () => {
 }
   return (
     <div className="App">
-      <p className='H1-reg'>Hello</p>
+      <p className='H1-reg'>SIGNAC Line OA CSS</p>
       <div  className={'pop-up animated ' + (alert === '1' ? 'fadeIn' : '')}>
         <div className='pop-up-dialog shadow-lv2-bottom'>
           <div className='pop-up-content'>

@@ -1,7 +1,7 @@
 
 @import 'defaultTheme.scss';
 :root{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 $transition: all 0.2s ease;
@@ -30,86 +30,86 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 .H1-semi-bold{
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 2.25rem;
-    line-height: 52px;
+    line-height: 3.25rem;
 }
 .H1-reg{
     font-family: $IBMPlexSansThai-Regular;
     font-size: 2.25rem;
-    line-height: 52px;
+    line-height: 3.25rem;
 }
 .H2-semi-bold{
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 2rem;
-    line-height: 48px;
+    line-height: 3rem;
 }
 .H2-reg{
     font-family: $IBMPlexSansThai-Regular;
     font-size: 2rem;
-    line-height: 48px;
+    line-height: 3rem;
 }
 .S1-med{
     font-family: $IBMPlexSansThai-Medium;
     font-size: 1.75rem;
-    line-height: 42px;
+    line-height: 2.625rem;
 }
 .S1-reg{
     font-family: $IBMPlexSansThai-Regular;
     font-size: 1.75rem;
-    line-height: 42px;
+    line-height: 2.625rem;
 }
 .S2-med{
     font-family: $IBMPlexSansThai-Medium;
     font-size: 1.2rem;
-    line-height: 28px;
+    line-height: 1.75rem;
 }
 .S2-reg{
     font-family: $IBMPlexSansThai-Regular;
     font-size: 1.2rem;
-    line-height: 28px;
+    line-height: 1.75rem;
 }
 .body-med{
     font-family: $IBMPlexSansThai-Medium;
     font-size: 1rem;
-    line-height: 26px;
+    line-height: 1.625rem;
 }
 .body-reg{
     font-family: $IBMPlexSansThai-Regular;
     font-size: 1rem;
-    line-height: 26px;
+    line-height: 1.625rem;
 }
 .body-reg-looped{
     font-family: $IBMPlexSansThai-Looped-Regular;
     font-size: 1rem;
-    line-height: 26px;
+    line-height: 1.625rem;
 }
 .button-semi-bold{
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 1rem;
-    line-height: 26px;
+    line-height: 1.625rem;
 }
 .overline-semi-bold{
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 0.75rem;
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 .caption-med{
     font-family: $IBMPlexSansThai-Medium;
     font-size: 0.75rem;
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 
 .form-floating{
     position: relative;
-    margin-top: 28px;
+    margin-top: 1.75rem;
     font-family: $IBMPlexSansThai-Regular;
     input{
         font-family: $IBMPlexSansThai-Regular;
-        font-size: 16px;
-        padding: 8px 16px;
-        line-height: 26px;
-        border: 2px solid var(--color-default-secondary);
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        line-height: 1.625rem;
+        border: 0.125rem solid var(--color-default-secondary);
         box-sizing: border-box;
-        border-radius: 16px;
+        border-radius: 1rem;
         width: 100%;
         margin: 0;
         outline: none;
@@ -118,17 +118,17 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         opacity: 0;
     }
     input:focus{
-        border: 2px solid var(--color-secondary);
+        border: 0.125rem solid var(--color-secondary);
     }
     input:hover{
-        border: 2px solid var(--color-hover-secondary);
+        border: 0.125rem solid var(--color-hover-secondary);
     }
     label{
         font-family: $IBMPlexSansThai-Regular;
-        top: 14px;
-        left: 16px;
+        top: 0.875rem;
+        left: 1rem;
         position: absolute;
-        font-size: 16px;
+        font-size: 1rem;
         pointer-events: none;
         transform-origin: 0 0;
         transition: 0.2s cubic-bezier(1, 0, 0, 1);
@@ -137,14 +137,14 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     input:focus ~ label,
     input:not(:placeholder-shown) ~ label
     {
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
         color: var(--color-secondary);
-        transform: translateX(-16px) translateY(-36px);
+        transform: translateX(-1rem) translateY(-2.25rem);
     }
 
     input:disabled{
-        border: 2px solid var(--color-on-surface-disabled);
+        border: 0.125rem solid var(--color-on-surface-disabled);
         background-color: var(--color-surface-disabled);
         color: var(--color-on-surface-disabled);
     }
@@ -157,7 +157,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
 .form-error{
     input{
-        border: 2px solid var(--color-error);
+        border: 0.125rem solid var(--color-error);
     }
     input:focus ~ label,
     input:not(:placeholder-shown) ~ label
@@ -166,10 +166,10 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     .error-message{
         font-family: $IBMPlexSansThai-Regular;
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
         color: var(--color-error);
-        margin-left: 16px;
+        margin-left: 1rem;
     }
 }
 
@@ -177,14 +177,14 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     text-align: center;
     input{
         text-align: center;
-        width: 32px;
-        font-size: 18px;
+        width: 2rem;
+        font-size: 1.125rem;
         background-color: var(--color-on-success);
-        border: 2px solid var(--color-on-surface-disabled);
+        border: 0.125rem solid var(--color-on-surface-disabled);
         box-sizing: border-box;
-        border-radius: 8px;
-        line-height: 30px;
-        margin: 0px 8px;
+        border-radius: 0.5rem;
+        line-height: 1.875rem;
+        margin: 0 0.5rem;
         outline: none;
         color: var(--color-on-primary-container);
     }
@@ -201,12 +201,12 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     text-align: center;
     span{
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 1rem;
+        height: 1rem;
         background-color: var(--color-on-success);
-        border-radius: 16px;
-        border: 2px solid var(--color-secondary);
-        margin: 0px 8px;
+        border-radius: 1rem;
+        border: 0.125rem solid var(--color-secondary);
+        margin: 0 0.5rem;
     }
     .validated{
         background-color: var(--color-secondary);
@@ -221,21 +221,21 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     position: relative;
     select{
         display: block;
-        margin-top: 8px;
+        margin-top: 0.5rem;
         width: 100%;
-        padding: 8px 16px;
-        border: 2px solid var(--color-default-secondary);
+        padding: 0.5rem 1rem;
+        border: 0.125rem solid var(--color-default-secondary);
         box-sizing: border-box;
-        border-radius: 16px;
-        font-size: 16px;
-        line-height: 26px;
+        border-radius: 1rem;
+        font-size: 1rem;
+        line-height: 1.625rem;
         background: var(--color-background);
         font-family: $IBMPlexSansThai-Regular;
         color: var(--color-on-secondary-container);
         background-image: url('./assets/icon/expand_more_24px.svg');
         background-repeat: no-repeat;
-        background-position: right 22px center;
-        background-size: 12px;
+        background-position: right 1.375rem center;
+        background-size: 0.75rem;
         outline: none;
         appearance: none;
         -webkit-transition: $transition;                  
@@ -269,8 +269,8 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     label
     {
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
         font-family: $IBMPlexSansThai-Regular;
         color: var(--color-secondary);
     }
@@ -282,7 +282,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
 .form-select-error{
     select{
-        border: 2px solid var(--color-error);
+        border: 0.125rem solid var(--color-error);
         background-image: url('./assets/icon/expand_more_24px_error.svg');
     }
     label
@@ -291,21 +291,21 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     .error-message{
         font-family: $IBMPlexSansThai-Regular;
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
         color: var(--color-error);
-        margin-left: 16px;
+        margin-left: 1rem;
     }
 }
 
 .btn{
     font-family: $IBMPlexSansThai-SemiBold;
     align-items: center;
-    padding: 8px 24px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-size: 16px;
-    line-height: 26px;
+    padding: 0.5rem 1.5rem;
+    border: 0.063rem solid transparent;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
     outline: none;
     margin: 0;
     cursor: pointer;
@@ -342,41 +342,41 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 }
 
 .btn-secondary{
-    border: 2px solid var(--color-secondary);
+    border: 0.125rem solid var(--color-secondary);
     color: var(--color-secondary);
     background-color: var(--color-transparent); 
 }
 .btn-secondary:hover{
-    border: 2px solid var(--color-hover-secondary);
+    border: 0.125rem solid var(--color-hover-secondary);
     color: var(--color-hover-secondary);
     background-color: var(--color-transparent); 
 }
 .btn-secondary:active{
-    border: 2px solid var(--color-pressed-secondary);
+    border: 0.125rem solid var(--color-pressed-secondary);
     color: var(--color-pressed-secondary);
     background-color: var(--color-transparent); 
 }
 
 .btn-secondary:disabled{
     cursor: default;
-    border: 2px solid var(--color-surface-disabled);
+    border: 0.125rem solid var(--color-surface-disabled);
     color: var(--color-on-surface-disabled);
     background-color: var(--color-transparent); 
 }
 
 .form-check{
     display: block;
-    padding-left: 19px;
+    padding-left: 1.188rem;
     .form-check-input[type="checkbox"]{
         float: left;
-        margin-left: -19px;
+        margin-left: -1.188rem;
         appearance: none;
         -webkit-appearance:none;
         -moz-appearance: none;
-        width: 18px;
-        height: 18px;
-        border-radius: 3px;
-        border: 2px solid var(--color-secondary);
+        width: 1.125rem;
+        height: 1.125rem;
+        border-radius: 0.188rem;
+        border: 0.125rem solid var(--color-secondary);
         outline: none;
     }
     .form-check-input[type="checkbox"]:focus { 
@@ -384,39 +384,39 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     .form-check-input[type="checkbox"]:checked { 
         appearance: none;
-        width: 18px;
-        height: 18px;
+        width: 1.125rem;
+        height: 1.125rem;
         background: url(./assets/icon/check_box_24px.svg) 0 center no-repeat;
         background-position-x: center;
     }
     .form-check-label{
         font-family: $IBMPlexSansThai-Regular;
-        font-size: 16px;
-        line-height: 26px;
-        margin-left: 19px;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        margin-left: 1.188rem;
         display: block;
     }
 
     .form-check-input[type="checkbox"]:disabled{
         cursor: default;
         appearance: none;
-        width: 18px;
-        height: 18px;
-        border-radius: 3px;
-        border: 2px solid var(--color-on-surface-disabled);
+        width: 1.125rem;
+        height: 1.125rem;
+        border-radius: 0.188rem;
+        border: 0.125rem solid var(--color-on-surface-disabled);
     }
 
 }
 
 .form-radio{
     display: block;
-    padding-left: 19px;
+    padding-left: 1.188rem;
     .form-radio-input[type="radio"]{
         float: left;
-        margin-left: -19px;
+        margin-left: -1.188rem;
         appearance: none;
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
         background: url(./assets/icon/radio_button_unchecked.svg) 0 center no-repeat;
         background-position-x: center;
         outline: none;
@@ -426,34 +426,34 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     .form-radio-input[type="radio"]:checked { 
         appearance: none;
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
         background: url(./assets/icon/radio_button_checked_24px.svg) 0 center no-repeat;
         background-position-x: center;
     }
     .form-radio-label{
         font-family: $IBMPlexSansThai-Regular;
-        font-size: 16px;
-        line-height: 26px;
-        margin-left: 19px;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        margin-left: 1.188rem;
         display: block;
     }
 
     .form-radio-input[type="radio"]:disabled{
         cursor: default;
         appearance: none;
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
         border-radius: 50%;
-        border: 2px solid var(--color-on-surface-disabled);
+        border: 0.125rem solid var(--color-on-surface-disabled);
     }
 
 }
 
 .card{
     background-color: var(--color-background);
-    border-radius: 16px;
-    padding: 16px;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 // .display-block{
@@ -468,11 +468,11 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
   }
 
   @keyframes bounceInDown{ 
-    0%{ opacity: 0.2;  transform: translateY(-300px)}
-    30%{ opacity: 0.7; transform: translateY(25px)}
-    60%{ opacity: 0.85; transform: translateY(-10px)}
-    80%{ opacity: 0.9; transform: translateY(20px)}
-    100%{ opacity: 1; transform: translateY(0px)}
+    0%{ opacity: 0.2;  transform: translateY(-18.75rem)}
+    30%{ opacity: 0.7; transform: translateY(1.563rem)}
+    60%{ opacity: 0.85; transform: translateY(-0.625rem)}
+    80%{ opacity: 0.9; transform: translateY(1.25rem)}
+    100%{ opacity: 1; transform: translateY(0)}
 }
 
 .bounceInDown {
@@ -486,7 +486,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
 .toast-overlay{
     position: fixed;
-    top: 8px;
+    top: 0.5rem;
     left: 0;
     z-index: 999999;
     width: 100%;
@@ -496,49 +496,49 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
 .toast{
     position: relative;
-    padding: 16px 0;
-    border-radius: 16px;
-    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
-    margin: 0 16px;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.375rem 0.875rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.625rem 2rem -0.25rem rgba(24, 39, 75, 0.1);
+    margin: 0 1rem;
     .icon{
         text-align: center;
-        width: 56px;
+        width: 3.5rem;
         position: absolute;
         span{
-            width: 20px;
-            height: 20px;
-            margin: 2px;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin: 0.125rem;
         }
     }
     .content{
-        margin-left: 56px;
-        margin-right: 16px;
+        margin-left: 3.5rem;
+        margin-right: 1rem;
         border-color: var(--color-transparent);
         text-align: left;
-        padding-right: 16px;
+        padding-right: 1rem;
         .toast-tittle{
             font-family: $IBMPlexSansThai-Medium;
             margin-top: 0;
             margin-bottom: 0;
-            font-size: 16px;
-            line-height: 26px;
+            font-size: 1rem;
+            line-height: 1.625rem;
         }
         .toast-description{
             font-family: $IBMPlexSansThai-Regular;
             margin-top: 0;
             margin-bottom: 0;
-            font-size: 16px;
-            line-height: 26px;
+            font-size: 1rem;
+            line-height: 1.625rem;
         }
         .btn-link{
             cursor: pointer;
             outline: none;
             background-color: var(--color-transparent);
             border: none;
-            font-size: 16px;
+            font-size: 1rem;
             font-family: $IBMPlexSansThai-SemiBold;
             padding: 0;
-            height: 26px;
+            height: 1.625rem;
         }
         .btn-link:active{
             -webkit-tap-highlight-color: var(--color-transparent);
@@ -546,9 +546,9 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     .close{
         position: absolute;
-        width: 72px;
-        top: 0px;
-        right: 0px;
+        width: 4.5rem;
+        top: 0;
+        right: 0;
         text-align: center;
         min-height: 100%;
         display: flex;
@@ -559,14 +559,14 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             cursor: pointer;
             background-color: var(--color-transparent);
             border: none;
-            width: 24px;
-            height: 24px;
+            width: 1.5rem;
+            height: 1.5rem;
             padding: 0;
             span{
                 content: "";
                 display: inline-block;
-                width: 18px;
-                height: 18px;
+                width: 1.125rem;
+                height: 1.125rem;
                 -webkit-mask-size: contain;
                 mask-size: contain;
                 -webkit-mask-position: center;
@@ -652,25 +652,25 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
 .toast-btn-close{
     .content{
-        margin-right: 72px;
+        margin-right: 4.5rem;
     }  
 }
 
 .toast-info.toast-btn-close{
     .content{
-        border-right: 1px solid var(--color-secondary);
+        border-right: 0.063rem solid var(--color-secondary);
     }  
 }
 
 .toast-success.toast-btn-close{
     .content{
-        border-right: 1px solid var(--color-on-success-container);
+        border-right: 0.063rem solid var(--color-on-success-container);
     }  
 }
 
 .toast-error.toast-btn-close{
     .content{
-        border-right: 1px solid var(--color-on-error-container);
+        border-right: 0.063rem solid var(--color-on-error-container);
     }  
 }
 
@@ -679,24 +679,24 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 }
 
 .shadow-lv1-top{
-    box-shadow: 0px -6px 8px -6px rgba(24, 39, 75, 0.12), 0px -8px 16px -6px rgba(24, 39, 75, 0.08);
+    box-shadow: 0 -0.375rem 0.5rem -0.375rem rgba(24, 39, 75, 0.12), 0 -0.5rem 1rem -0.375rem rgba(24, 39, 75, 0.08);
 }
 .shadow-lv1-bottom{
-    box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+    box-shadow: 0 0.375rem 0.5rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.5rem 1rem -0.375rem rgba(24, 39, 75, 0.08);
 }
 
 .shadow-lv2-top{
-    box-shadow: 0px -6px 14px -6px rgba(24, 39, 75, 0.12), 0px -10px 32px -4px rgba(24, 39, 75, 0.1);
+    box-shadow: 0 -0.375rem 0.875rem -0.375rem rgba(24, 39, 75, 0.12), 0 -0.625rem 2rem -0.25rem rgba(24, 39, 75, 0.1);
 }
 .shadow-lv2-bottom{
-    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+    box-shadow: 0 0.375rem 0.875rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.625rem 2rem -0.25rem rgba(24, 39, 75, 0.1);
 }
 
 .shadow-lv3-top{
-    box-shadow: 0px -8px 22px -6px rgba(24, 39, 75, 0.12), 0px -14px 64px -4px rgba(24, 39, 75, 0.12);
+    box-shadow: 0 -0.5rem 1.375rem -0.375rem rgba(24, 39, 75, 0.12), 0 -0.875rem 4rem -0.25rem rgba(24, 39, 75, 0.12);
 }
 .shadow-lv3-bottom{
-    box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+    box-shadow: 0 0.5rem 1.375rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.875rem 4rem -0.25rem rgba(24, 39, 75, 0.12);
 }
 
 .m-0{
@@ -723,7 +723,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 .pop-up{
     display: none;
     background-color: rgba(32,28,0,0.2);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(1.25rem);
     position: fixed;
     top: 0;
     left: 0;
@@ -739,31 +739,31 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     justify-content: center;
     height: 100%;
     .pop-up-content{
-        padding: 24px 16px;
+        padding: 1.5rem 1rem;
         width: 100%;
-        max-width: 280px;
-        margin: 0px 40px;
-        border-radius: 16px;
+        max-width: 17.5rem;
+        margin: 0 2.5rem;
+        border-radius: 1rem;
         background: white;
         
         .pop-up-header{
             text-align: center;
             font-family: $IBMPlexSansThai-Medium;
-            font-size: 20px;
-            line-height: 28px;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
             color: var(--color-secondary);
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
         }
         .pop-up-body{
             font-family: $IBMPlexSansThai-Regular;
             text-align: center;
-            font-size: 16px;
-            line-height: 26px;
-            margin-bottom: 24px;
+            font-size: 1rem;
+            line-height: 1.625rem;
+            margin-bottom: 1.5rem;
         }
         .pop-up-footer{
             button{
-                margin-bottom: 24px;
+                margin-bottom: 1.5rem;
             }
             button:last-child{
                 margin-bottom: 0;
@@ -776,51 +776,13 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 .loader-overlay{
     display: none;
     background-color: rgba(32,28,0,0.2);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(1.25rem);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 99999!important;
-    // .loader{
-    //     top: 50%;
-    //     left: 50%;
-    //     margin: 0;
-    //     position: absolute;
-    //     -webkit-transform: translate(-50%,-50%);
-    //     transform: translate(-50%,-50%);
-    // span {
-    //     display: inline-block;
-    //     height: 12px;
-    //     width: 12px;
-    //     border-radius: 500px;
-    //     margin: 0 4px;
-    // }
-    // span:nth-child(1){
-    //     background: var(--color-primary;
-    //     animation: scale 1s 0.2s infinite ease-in-out;
-    // }
-    // span:nth-child(2){
-    //     background: var(--color-error);
-    //     animation: scale 1s 0.4s infinite ease-in-out;
-    // }
-    // span:nth-child(3){
-    //     background: #375699;
-    //     animation: scale 1s 0.6s infinite ease-in-out;
-    // }
-    // span:nth-child(4){
-    //     background: var(--color-secondary);
-    //     animation: scale 1s 0.8s infinite ease-in-out;
-    // }
-    // }
-    // @keyframes scale{ 
-    //     0%{ transform:scale(1);}
-    //     25%{ transform:scale(0.5);}
-    //     50%{ transform:scale(1.2);}
-    //     75%{ transform:scale(1);}
-    //     100%{ transform:scale(1);}
-    // }
 
     .center {
         display: block;
@@ -831,8 +793,8 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 
     .loader {
-        height: 32px;
-        width: 32px;
+        height: 2rem;
+        width: 2rem;
         -webkit-animation: loader-1 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
                 animation: loader-1 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
     }
@@ -851,8 +813,8 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         top: 0; left: 0;
         bottom: 0; right: auto;
         margin: auto;
-        width: 8px;
-        height: 8px;
+        width: 0.5rem;
+        height: 0.5rem;
         background: var(--color-primary);
         border-radius: 50%;
         -webkit-animation: loader-2 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
@@ -860,12 +822,12 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     @-webkit-keyframes loader-2 {
         0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
-        50%  { -webkit-transform: translate3d(24px, 0, 0) scale(.5); }
+        50%  { -webkit-transform: translate3d(1.5rem, 0, 0) scale(.5); }
         100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
     }
     @keyframes loader-2 {
         0%   { transform: translate3d(0, 0, 0) scale(1); }
-        50%  { transform: translate3d(24px, 0, 0) scale(.5); }
+        50%  { transform: translate3d(1.5rem, 0, 0) scale(.5); }
         100% { transform: translate3d(0, 0, 0) scale(1); }
     }
     .loader::after {
@@ -875,8 +837,8 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         top: 0; left: auto;
         bottom: 0; right: 0;
         margin: auto;
-        width: 8px;
-        height: 8px;
+        width: 0.5rem;
+        height: 0.5rem;
         background: var(--color-error);
         border-radius: 50%;
         -webkit-animation: loader-3 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
@@ -884,12 +846,12 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     @-webkit-keyframes loader-3 {
         0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
-        50%  { -webkit-transform: translate3d(-24px, 0, 0) scale(.5); }
+        50%  { -webkit-transform: translate3d(-1.5rem, 0, 0) scale(.5); }
         100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
     }
     @keyframes loader-3 {
         0%   { transform: translate3d(0, 0, 0) scale(1); }
-        50%  { transform: translate3d(-24px, 0, 0) scale(.5); }
+        50%  { transform: translate3d(-1.5rem, 0, 0) scale(.5); }
         100% { transform: translate3d(0, 0, 0) scale(1); }
     }
     .loader span {
@@ -898,8 +860,8 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         top: 0; left: 0;
         bottom: 0; right: 0;
         margin: auto;
-        height: 32px;
-        width: 32px;
+        height: 2rem;
+        width: 2rem;
     }
     .loader span::before {
         content: "";
@@ -908,8 +870,8 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         top: 0; left: 0;
         bottom: auto; right: 0;
         margin: auto;
-        width: 8px;
-        height: 8px;
+        width: 0.5rem;
+        height: 0.5rem;
         background: var(--color-quaternary);
         border-radius: 50%;
         -webkit-animation: loader-4 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
@@ -917,12 +879,12 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     @-webkit-keyframes loader-4 {
         0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
-        50%  { -webkit-transform: translate3d(0, 24px, 0) scale(.5); }
+        50%  { -webkit-transform: translate3d(0, 1.5rem, 0) scale(.5); }
         100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
     }
     @keyframes loader-4 {
         0%   { transform: translate3d(0, 0, 0) scale(1); }
-        50%  { transform: translate3d(0, 24px, 0) scale(.5); }
+        50%  { transform: translate3d(0, 1.5rem, 0) scale(.5); }
         100% { transform: translate3d(0, 0, 0) scale(1); }
     }
     .loader span::after {
@@ -932,8 +894,8 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         top: auto; left: 0;
         bottom: 0; right: 0;
         margin: auto;
-        width: 8px;
-        height: 8px;
+        width: 0.5rem;
+        height: 0.5rem;
         background: var(--color-secondary);
         border-radius: 50%;
         -webkit-animation: loader-5 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
@@ -941,12 +903,12 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     @-webkit-keyframes loader-5 {
         0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
-        50%  { -webkit-transform: translate3d(0, -24px, 0) scale(.5); }
+        50%  { -webkit-transform: translate3d(0, -1.5rem, 0) scale(.5); }
         100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
     }
     @keyframes loader-5 {
         0%   { transform: translate3d(0, 0, 0) scale(1); }
-        50%  { transform: translate3d(0, -24px, 0) scale(.5); }
+        50%  { transform: translate3d(0, -1.5rem, 0) scale(.5); }
         100% { transform: translate3d(0, 0, 0) scale(1); }
     }
 
