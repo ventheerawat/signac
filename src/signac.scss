@@ -1,7 +1,6 @@
-
-@import 'defaultTheme.scss';
-:root{
-    font-size: 1rem;
+@import "defaultTheme.scss";
+:root {
+    font-size: 16px;
 }
 
 $transition: all 0.2s ease;
@@ -27,103 +26,120 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     src: url(fonts/IBMPlexSansThaiLooped-Regular.ttf);
 }
 
-.H1-semi-bold{
+.H1-semi-bold {
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 2.25rem;
     line-height: 3.25rem;
 }
-.H1-reg{
+.H1-reg {
     font-family: $IBMPlexSansThai-Regular;
     font-size: 2.25rem;
     line-height: 3.25rem;
 }
-.H2-semi-bold{
+.H2-semi-bold {
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 2rem;
     line-height: 3rem;
 }
-.H2-reg{
+.H2-reg {
     font-family: $IBMPlexSansThai-Regular;
     font-size: 2rem;
     line-height: 3rem;
 }
-.S1-med{
+.S1-med {
     font-family: $IBMPlexSansThai-Medium;
     font-size: 1.75rem;
     line-height: 2.625rem;
 }
-.S1-reg{
+.S1-reg {
     font-family: $IBMPlexSansThai-Regular;
     font-size: 1.75rem;
     line-height: 2.625rem;
 }
-.S2-med{
+.S2-med {
     font-family: $IBMPlexSansThai-Medium;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
 }
-.S2-reg{
+.S2-reg {
     font-family: $IBMPlexSansThai-Regular;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
 }
-.body-med{
+.body-med {
     font-family: $IBMPlexSansThai-Medium;
     font-size: 1rem;
-    line-height: 1.625rem;
+    line-height: 1.65rem;
 }
-.body-reg{
+.body-reg {
     font-family: $IBMPlexSansThai-Regular;
     font-size: 1rem;
-    line-height: 1.625rem;
+    line-height: 1.65rem;
 }
-.body-reg-looped{
+.body-reg-looped {
     font-family: $IBMPlexSansThai-Looped-Regular;
     font-size: 1rem;
-    line-height: 1.625rem;
+    line-height: 1.65rem;
 }
-.button-semi-bold{
+.button-semi-bold {
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 1rem;
-    line-height: 1.625rem;
+    line-height: 1.65rem;
 }
-.overline-semi-bold{
+.overline-semi-bold {
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 0.75rem;
-    line-height: 1.25rem;
+    line-height: 1.238rem;
 }
-.caption-med{
+.caption-med {
     font-family: $IBMPlexSansThai-Medium;
     font-size: 0.75rem;
-    line-height: 1.25rem;
+    line-height: 1.238rem;
 }
 
-.form-floating{
+.form-floating {
     position: relative;
     margin-top: 1.75rem;
     font-family: $IBMPlexSansThai-Regular;
-    input{
+    input {
         font-family: $IBMPlexSansThai-Regular;
         font-size: 1rem;
         padding: 0.5rem 1rem;
-        line-height: 1.625rem;
+        line-height: 1.65rem;
         border: 0.125rem solid var(--color-default-secondary);
         box-sizing: border-box;
         border-radius: 1rem;
         width: 100%;
         margin: 0;
         outline: none;
+        &::placeholder {
+            opacity: 0;
+        }
+        &:focus {
+            border: 0.125rem solid var(--color-secondary);
+        }
+        &:hover {
+            border: 0.125rem solid var(--color-hover-secondary);
+        }
+        &:focus ~ label,
+        &:not(:placeholder-shown) ~ label {
+            font-size: 0.75rem;
+            line-height: 1.25rem;
+            color: var(--color-secondary);
+            transform: translateX(-1rem) translateY(-2.25rem);
+        }
+
+        &:disabled {
+            border: 0.125rem solid var(--color-on-surface-disabled);
+            background-color: var(--color-surface-disabled);
+            color: var(--color-on-surface-disabled);
+        }
+
+        &:disabled ~ label {
+            color: var(--color-on-surface-disabled);
+        }
     }
-    input::placeholder{
-        opacity: 0;
-    }
-    input:focus{
-        border: 0.125rem solid var(--color-secondary);
-    }
-    input:hover{
-        border: 0.125rem solid var(--color-hover-secondary);
-    }
-    label{
+    label {
         font-family: $IBMPlexSansThai-Regular;
         top: 0.875rem;
         left: 1rem;
@@ -134,37 +150,17 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         transition: 0.2s cubic-bezier(1, 0, 0, 1);
         color: var(--color-on-surface-disabled);
     }
-    input:focus ~ label,
-    input:not(:placeholder-shown) ~ label
-    {
-        font-size: 0.75rem;
-        line-height: 1.25rem;
-        color: var(--color-secondary);
-        transform: translateX(-1rem) translateY(-2.25rem);
-    }
-
-    input:disabled{
-        border: 0.125rem solid var(--color-on-surface-disabled);
-        background-color: var(--color-surface-disabled);
-        color: var(--color-on-surface-disabled);
-    }
-
-    input:disabled ~ label
-    {
-        color: var(--color-on-surface-disabled);
-    }
 }
 
-.form-error{
-    input{
+.form-error {
+    input {
         border: 0.125rem solid var(--color-error);
+        &:focus ~ label,
+        &:not(:placeholder-shown) ~ label {
+            color: var(--color-error);
+        }
     }
-    input:focus ~ label,
-    input:not(:placeholder-shown) ~ label
-    {
-        color: var(--color-error);
-    }
-    .error-message{
+    .error-message {
         font-family: $IBMPlexSansThai-Regular;
         font-size: 0.75rem;
         line-height: 1.25rem;
@@ -173,9 +169,9 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.form-input-opt{
+.form-input-opt {
     text-align: center;
-    input{
+    input {
         text-align: center;
         width: 2rem;
         font-size: 1.125rem;
@@ -187,19 +183,21 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         margin: 0 0.5rem;
         outline: none;
         color: var(--color-on-primary-container);
-    }
-    input:focus, input:valid, .validated{
-        border-color: var(--color-secondary);
-    }
-    input:disabled{
-        border-color: var(--color-on-surface-disabled);
-        background-color: var(--color-surface-disabled);
+        &:focus,
+        &:valid,
+        .validated {
+            border-color: var(--color-secondary);
+        }
+        &:disabled {
+            border-color: var(--color-on-surface-disabled);
+            background-color: var(--color-surface-disabled);
+        }
     }
 }
 
-.form-input-pin{
+.form-input-pin {
     text-align: center;
-    span{
+    span {
         display: inline-block;
         width: 1rem;
         height: 1rem;
@@ -208,18 +206,18 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         border: 0.125rem solid var(--color-secondary);
         margin: 0 0.5rem;
     }
-    .validated{
+    .validated {
         background-color: var(--color-secondary);
     }
-    .disabled{
+    .disabled {
         border-color: var(--color-on-surface-disabled);
         background-color: var(--color-surface-disabled);
     }
 }
 
-.form-select{
+.form-select {
     position: relative;
-    select{
+    select {
         display: block;
         margin-top: 0.5rem;
         width: 100%;
@@ -228,68 +226,65 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         box-sizing: border-box;
         border-radius: 1rem;
         font-size: 1rem;
-        line-height: 1.625rem;
+        line-height: 1.65rem;
         background: var(--color-background);
         font-family: $IBMPlexSansThai-Regular;
         color: var(--color-on-secondary-container);
-        background-image: url('./assets/icon/expand_more_24px.svg');
+        background-image: url("./assets/icon/expand_more_24px.svg");
         background-repeat: no-repeat;
         background-position: right 1.375rem center;
         background-size: 0.75rem;
         outline: none;
         appearance: none;
-        -webkit-transition: $transition;                  
-        -moz-transition: $transition;                 
-        -o-transition: $transition;   
-        -ms-transition: $transition;          
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+        -o-transition: $transition;
+        -ms-transition: $transition;
         transition: $transition;
+        &:hover {
+            border-color: var(--color-hover-secondary);
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -o-transition: $transition;
+            -ms-transition: $transition;
+            transition: $transition;
+        }
+        &:focus {
+            background-image: url("./assets/icon/expand_more_24px.svg");
+            border-color: var(--color-secondary);
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -o-transition: $transition;
+            -ms-transition: $transition;
+            transition: $transition;
+        }
+        &:disabled {
+            background-image: url("./assets/icon/expand_more_24px_disable.svg");
+            background-color: var(--color-surface-disabled);
+            border-color: var(--color-on-surface-disabled);
+            color: var(--color-on-surface-disabled);
+        }
     }
-    select:hover{
-        border-color: var(--color-hover-secondary);
-        -webkit-transition: $transition;                  
-        -moz-transition: $transition;                 
-        -o-transition: $transition;   
-        -ms-transition: $transition;          
-        transition: $transition;
-    }
-    select:focus{
-        background-image: url('./assets/icon/expand_more_24px.svg');
-        border-color: var(--color-secondary);
-        -webkit-transition: $transition;                  
-        -moz-transition: $transition;                 
-        -o-transition: $transition;   
-        -ms-transition: $transition;          
-        transition: $transition;
-    }
-    select:disabled{
-        background-image: url('./assets/icon/expand_more_24px_disable.svg');
-        background-color: var(--color-surface-disabled);
-        border-color: var(--color-on-surface-disabled);
-        color: var(--color-on-surface-disabled);
-    }
-    label
-    {
+    label {
         font-size: 0.75rem;
         line-height: 1.25rem;
         font-family: $IBMPlexSansThai-Regular;
         color: var(--color-secondary);
     }
-    .label-disable{
+    .label-disable {
         color: var(--color-on-surface-disabled);
     }
-
 }
 
-.form-select-error{
-    select{
+.form-select-error {
+    select {
         border: 0.125rem solid var(--color-error);
-        background-image: url('./assets/icon/expand_more_24px_error.svg');
+        background-image: url("./assets/icon/expand_more_24px_error.svg");
     }
-    label
-    {
+    label {
         color: var(--color-error);
     }
-    .error-message{
+    .error-message {
         font-family: $IBMPlexSansThai-Regular;
         font-size: 0.75rem;
         line-height: 1.25rem;
@@ -298,120 +293,119 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.btn{
+.btn {
     font-family: $IBMPlexSansThai-SemiBold;
     align-items: center;
     padding: 0.5rem 1.5rem;
     border: 0.063rem solid transparent;
     border-radius: 0.5rem;
     font-size: 1rem;
-    line-height: 1.625rem;
+    line-height: 1.65rem;
     outline: none;
     margin: 0;
     cursor: pointer;
-    -webkit-transition: $transition;                  
-    -moz-transition: $transition;                 
-    -o-transition: $transition;   
-    -ms-transition: $transition;          
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
     transition: $transition;
 }
 
-.btn-primary{
+.btn-primary {
     color: var(--color-on-secondary);
-    background-color: var(--color-secondary); 
+    background-color: var(--color-secondary);
 }
-.btn-primary:hover{
+.btn-primary:hover {
     color: var(--color-on-secondary);
-    background-color: var(--color-hover-secondary); 
+    background-color: var(--color-hover-secondary);
 }
-.btn-primary:active{
+.btn-primary:active {
     outline: none;
     color: var(--color-on-secondary);
-    background-color: var(--color-pressed-secondary); 
+    background-color: var(--color-pressed-secondary);
     -webkit-tap-highlight-color: var(--color-transparent);
 }
 
-.btn-primary:disabled{
+.btn-primary:disabled {
     cursor: default;
     color: var(--color-on-surface-disabled);
-    background-color: var(--color-surface-disabled); 
+    background-color: var(--color-surface-disabled);
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-.btn-secondary{
+.btn-secondary {
     border: 0.125rem solid var(--color-secondary);
     color: var(--color-secondary);
-    background-color: var(--color-transparent); 
+    background-color: var(--color-transparent);
 }
-.btn-secondary:hover{
+.btn-secondary:hover {
     border: 0.125rem solid var(--color-hover-secondary);
     color: var(--color-hover-secondary);
-    background-color: var(--color-transparent); 
+    background-color: var(--color-transparent);
 }
-.btn-secondary:active{
+.btn-secondary:active {
     border: 0.125rem solid var(--color-pressed-secondary);
     color: var(--color-pressed-secondary);
-    background-color: var(--color-transparent); 
+    background-color: var(--color-transparent);
 }
 
-.btn-secondary:disabled{
+.btn-secondary:disabled {
     cursor: default;
     border: 0.125rem solid var(--color-surface-disabled);
     color: var(--color-on-surface-disabled);
-    background-color: var(--color-transparent); 
+    background-color: var(--color-transparent);
 }
 
-.form-check{
+.form-check {
     display: block;
     padding-left: 1.188rem;
-    .form-check-input[type="checkbox"]{
+    .form-check-input[type="checkbox"] {
         float: left;
         margin-left: -1.188rem;
         appearance: none;
-        -webkit-appearance:none;
+        -webkit-appearance: none;
         -moz-appearance: none;
         width: 1.125rem;
         height: 1.125rem;
         border-radius: 0.188rem;
         border: 0.125rem solid var(--color-secondary);
         outline: none;
+        &[type="checkbox"]:focus {
+            outline: none;
+        }
+        &[type="checkbox"]:checked {
+            appearance: none;
+            width: 1.125rem;
+            height: 1.125rem;
+            background: url(./assets/icon/check_box_24px.svg) 0 center no-repeat;
+            background-position-x: center;
+        }
+        &[type="checkbox"]:disabled {
+            cursor: default;
+            appearance: none;
+            width: 1.125rem;
+            height: 1.125rem;
+            border-radius: 0.188rem;
+            border: 0.125rem solid var(--color-on-surface-disabled);
+        }
     }
-    .form-check-input[type="checkbox"]:focus { 
-    outline: none;
-    }
-    .form-check-input[type="checkbox"]:checked { 
-        appearance: none;
-        width: 1.125rem;
-        height: 1.125rem;
-        background: url(./assets/icon/check_box_24px.svg) 0 center no-repeat;
-        background-position-x: center;
-    }
-    .form-check-label{
+
+    .form-check-label {
         font-family: $IBMPlexSansThai-Regular;
         font-size: 1rem;
-        line-height: 1.625rem;
+        line-height: 1.65rem;
         margin-left: 1.188rem;
         display: block;
     }
-
-    .form-check-input[type="checkbox"]:disabled{
-        cursor: default;
-        appearance: none;
-        width: 1.125rem;
-        height: 1.125rem;
-        border-radius: 0.188rem;
-        border: 0.125rem solid var(--color-on-surface-disabled);
-    }
-
 }
 
-.form-radio{
+.form-radio {
     display: block;
     padding-left: 1.188rem;
-    .form-radio-input[type="radio"]{
+    .form-radio-input[type="radio"] {
         float: left;
         margin-left: -1.188rem;
         appearance: none;
@@ -420,44 +414,43 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         background: url(./assets/icon/radio_button_unchecked.svg) 0 center no-repeat;
         background-position-x: center;
         outline: none;
+        &[type="radio"]:focus {
+            outline: none;
+        }
+        &[type="radio"]:checked {
+            appearance: none;
+            width: 1.25rem;
+            height: 1.25rem;
+            background: url(./assets/icon/radio_button_checked_24px.svg) 0 center no-repeat;
+            background-position-x: center;
+        }
+        &[type="radio"]:disabled {
+            cursor: default;
+            appearance: none;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 50%;
+            border: 0.125rem solid var(--color-on-surface-disabled);
+        }
     }
-    .form-radio-input[type="radio"]:focus { 
-    outline: none;
-    }
-    .form-radio-input[type="radio"]:checked { 
-        appearance: none;
-        width: 1.25rem;
-        height: 1.25rem;
-        background: url(./assets/icon/radio_button_checked_24px.svg) 0 center no-repeat;
-        background-position-x: center;
-    }
-    .form-radio-label{
+    
+    .form-radio-label {
         font-family: $IBMPlexSansThai-Regular;
         font-size: 1rem;
-        line-height: 1.625rem;
+        line-height: 1.65rem;
         margin-left: 1.188rem;
         display: block;
     }
-
-    .form-radio-input[type="radio"]:disabled{
-        cursor: default;
-        appearance: none;
-        width: 1.25rem;
-        height: 1.25rem;
-        border-radius: 50%;
-        border: 0.125rem solid var(--color-on-surface-disabled);
-    }
-
 }
 
-.card{
+.card {
     background-color: var(--color-background);
     border-radius: 1rem;
     padding: 1rem;
 }
 
 // .display-block{
-//     display: block !important; 
+//     display: block !important;
 // }
 
 .animated {
@@ -465,14 +458,29 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     animation-duration: 0.58s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-  }
+}
 
-  @keyframes bounceInDown{ 
-    0%{ opacity: 0.2;  transform: translateY(-18.75rem)}
-    30%{ opacity: 0.7; transform: translateY(1.563rem)}
-    60%{ opacity: 0.85; transform: translateY(-0.625rem)}
-    80%{ opacity: 0.9; transform: translateY(1.25rem)}
-    100%{ opacity: 1; transform: translateY(0)}
+@keyframes bounceInDown {
+    0% {
+        opacity: 0.2;
+        transform: translateY(-18.75rem);
+    }
+    30% {
+        opacity: 0.7;
+        transform: translateY(1.563rem);
+    }
+    60% {
+        opacity: 0.85;
+        transform: translateY(-0.625rem);
+    }
+    80% {
+        opacity: 0.9;
+        transform: translateY(1.25rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .bounceInDown {
@@ -483,8 +491,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     transform-origin: center bottom;
 }
 
-
-.toast-overlay{
+.toast-overlay {
     position: fixed;
     top: 0.5rem;
     left: 0;
@@ -494,43 +501,43 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     display: none;
 }
 
-.toast{
+.toast {
     position: relative;
     padding: 1rem 0;
     border-radius: 1rem;
     box-shadow: 0 0.375rem 0.875rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.625rem 2rem -0.25rem rgba(24, 39, 75, 0.1);
     margin: 0 1rem;
-    .icon{
+    .icon {
         text-align: center;
         width: 3.5rem;
         position: absolute;
-        span{
+        span {
             width: 1.25rem;
             height: 1.25rem;
             margin: 0.125rem;
         }
     }
-    .content{
+    .content {
         margin-left: 3.5rem;
         margin-right: 1rem;
         border-color: var(--color-transparent);
         text-align: left;
         padding-right: 1rem;
-        .toast-tittle{
+        .toast-tittle {
             font-family: $IBMPlexSansThai-Medium;
             margin-top: 0;
             margin-bottom: 0;
             font-size: 1rem;
-            line-height: 1.625rem;
+            line-height: 1.65rem;
         }
-        .toast-description{
+        .toast-description {
             font-family: $IBMPlexSansThai-Regular;
             margin-top: 0;
             margin-bottom: 0;
             font-size: 1rem;
-            line-height: 1.625rem;
+            line-height: 1.65rem;
         }
-        .btn-link{
+        .btn-link {
             cursor: pointer;
             outline: none;
             background-color: var(--color-transparent);
@@ -540,11 +547,11 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             padding: 0;
             height: 1.625rem;
         }
-        .btn-link:active{
+        .btn-link:active {
             -webkit-tap-highlight-color: var(--color-transparent);
         }
     }
-    .close{
+    .close {
         position: absolute;
         width: 4.5rem;
         top: 0;
@@ -554,15 +561,15 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         display: flex;
         align-items: center;
         justify-content: center;
-        
-        button{
+
+        button {
             cursor: pointer;
             background-color: var(--color-transparent);
             border: none;
             width: 1.5rem;
             height: 1.5rem;
             padding: 0;
-            span{
+            span {
                 content: "";
                 display: inline-block;
                 width: 1.125rem;
@@ -577,152 +584,153 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
                 mask-image: url(./assets/icon/close.svg);
             }
         }
-        button:active{
+        button:active {
             -webkit-tap-highlight-color: var(--color-transparent);
         }
     }
 }
 
-.toast-info{
+.toast-info {
     color: var(--color-on-secondary-container);
-    background-color:  var(--color-on-secondary);
-    .icon{
-        span{
-        content: url(./assets/icon/info_24px.svg);
+    background-color: var(--color-on-secondary);
+    .icon {
+        span {
+            content: url(./assets/icon/info_24px.svg);
         }
-    } 
-    .content{
-        .btn-link{
+    }
+    .content {
+        .btn-link {
             color: var(--color-secondary);
         }
-
     }
-    .close{
-        button{
-            span{
+    .close {
+        button {
+            span {
                 background-color: var(--color-secondary);
             }
         }
     }
 }
-.toast-success{
+.toast-success {
     color: var(--color-on-success-container);
-    background-color:  var(--color-success-container);
-    .icon{
-        span{
-        content: url(./assets/icon/check_circle_24px.svg);
+    background-color: var(--color-success-container);
+    .icon {
+        span {
+            content: url(./assets/icon/check_circle_24px.svg);
         }
     }
-    .content{
-        .btn-link{
+    .content {
+        .btn-link {
             color: var(--color-on-success-container);
         }
-
     }
-    .close{
-        button{
-            span{
+    .close {
+        button {
+            span {
                 background-color: var(--color-on-success-container);
             }
         }
     }
 }
-.toast-error{
+.toast-error {
     color: var(--color-on-error-container);
-    background-color:  var(--color-error-container);
-    .icon{
-        span{
-        content: url(./assets/icon/report_problem_24px.svg);
+    background-color: var(--color-error-container);
+    .icon {
+        span {
+            content: url(./assets/icon/report_problem_24px.svg);
         }
-    } 
-    .content{
-        .btn-link{
+    }
+    .content {
+        .btn-link {
             color: var(--color-on-error-container);
         }
-
     }
-    .close{
-        button{
-            span{
+    .close {
+        button {
+            span {
                 background-color: var(--color-on-error-container);
             }
         }
     }
 }
 
-.toast-btn-close{
-    .content{
+.toast-btn-close {
+    .content {
         margin-right: 4.5rem;
-    }  
+    }
 }
 
-.toast-info.toast-btn-close{
-    .content{
+.toast-info.toast-btn-close {
+    .content {
         border-right: 0.063rem solid var(--color-secondary);
-    }  
+    }
 }
 
-.toast-success.toast-btn-close{
-    .content{
+.toast-success.toast-btn-close {
+    .content {
         border-right: 0.063rem solid var(--color-on-success-container);
-    }  
+    }
 }
 
-.toast-error.toast-btn-close{
-    .content{
+.toast-error.toast-btn-close {
+    .content {
         border-right: 0.063rem solid var(--color-on-error-container);
-    }  
+    }
 }
 
-.shadow-none{
-    box-shadow: none!important;
+.shadow-none {
+    box-shadow: none !important;
 }
 
-.shadow-lv1-top{
+.shadow-lv1-top {
     box-shadow: 0 -0.375rem 0.5rem -0.375rem rgba(24, 39, 75, 0.12), 0 -0.5rem 1rem -0.375rem rgba(24, 39, 75, 0.08);
 }
-.shadow-lv1-bottom{
+.shadow-lv1-bottom {
     box-shadow: 0 0.375rem 0.5rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.5rem 1rem -0.375rem rgba(24, 39, 75, 0.08);
 }
 
-.shadow-lv2-top{
+.shadow-lv2-top {
     box-shadow: 0 -0.375rem 0.875rem -0.375rem rgba(24, 39, 75, 0.12), 0 -0.625rem 2rem -0.25rem rgba(24, 39, 75, 0.1);
 }
-.shadow-lv2-bottom{
+.shadow-lv2-bottom {
     box-shadow: 0 0.375rem 0.875rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.625rem 2rem -0.25rem rgba(24, 39, 75, 0.1);
 }
 
-.shadow-lv3-top{
+.shadow-lv3-top {
     box-shadow: 0 -0.5rem 1.375rem -0.375rem rgba(24, 39, 75, 0.12), 0 -0.875rem 4rem -0.25rem rgba(24, 39, 75, 0.12);
 }
-.shadow-lv3-bottom{
+.shadow-lv3-bottom {
     box-shadow: 0 0.5rem 1.375rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.875rem 4rem -0.25rem rgba(24, 39, 75, 0.12);
 }
 
-.m-0{
+.m-0 {
     margin: 0;
 }
 
-.mt-0{
+.mt-0 {
     margin-top: 0;
 }
 
-.p-0{
+.p-0 {
     padding: 0;
 }
 
 .fadeIn {
-      display: block !important;
-      animation: fadeIn 0.2s  0.1s both ease-in-out;
+    display: block !important;
+    animation: fadeIn 0.2s 0.1s both ease-in-out;
 }
-    @keyframes fadeIn{ 
-        0%{ opacity: 0;}
-        100%{ opacity: 1;}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
+    100% {
+        opacity: 1;
+    }
+}
 
-.pop-up{
+.pop-up {
     display: none;
-    background-color: rgba(32,28,0,0.2);
+    background-color: rgba(32, 28, 0, 0.2);
     backdrop-filter: blur(1.25rem);
     position: fixed;
     top: 0;
@@ -730,23 +738,23 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     width: 100%;
     opacity: 0;
     height: 100%;
-    
-    z-index: 99999!important;
+
+    z-index: 99999 !important;
 }
-.pop-up-dialog{
+.pop-up-dialog {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    .pop-up-content{
+    .pop-up-content {
         padding: 1.5rem 1rem;
         width: 100%;
         max-width: 17.5rem;
         margin: 0 2.5rem;
         border-radius: 1rem;
         background: white;
-        
-        .pop-up-header{
+
+        .pop-up-header {
             text-align: center;
             font-family: $IBMPlexSansThai-Medium;
             font-size: 1.25rem;
@@ -754,111 +762,150 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             color: var(--color-secondary);
             margin-bottom: 1rem;
         }
-        .pop-up-body{
+        .pop-up-body {
             font-family: $IBMPlexSansThai-Regular;
             text-align: center;
             font-size: 1rem;
-            line-height: 1.625rem;
+            line-height: 1.65rem;
             margin-bottom: 1.5rem;
         }
-        .pop-up-footer{
-            button{
+        .pop-up-footer {
+            button {
                 margin-bottom: 1.5rem;
             }
-            button:last-child{
+            button:last-child {
                 margin-bottom: 0;
             }
         }
     }
 }
 
-
-.loader-overlay{
+.loader-overlay {
     display: none;
-    background-color: rgba(32,28,0,0.2);
+    background-color: rgba(32, 28, 0, 0.2);
     backdrop-filter: blur(1.25rem);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 99999!important;
+    z-index: 99999 !important;
 
     .center {
         display: block;
         position: absolute;
-        top: 0; left: 0;
-        bottom: 0; right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
         margin: auto;
     }
 
     .loader {
         height: 2rem;
         width: 2rem;
-        -webkit-animation: loader-1 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
-                animation: loader-1 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+        -webkit-animation: loader-1 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader-1 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
     @-webkit-keyframes loader-1 {
-        0%   { -webkit-transform: rotate(0deg); }
-        100% { -webkit-transform: rotate(360deg); }
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
     }
     @keyframes loader-1 {
-        0%   { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
     .loader::before {
         content: "";
         display: block;
         position: absolute;
-        top: 0; left: 0;
-        bottom: 0; right: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: auto;
         margin: auto;
         width: 0.5rem;
         height: 0.5rem;
         background: var(--color-primary);
         border-radius: 50%;
-        -webkit-animation: loader-2 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
-                animation: loader-2 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+        -webkit-animation: loader-2 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader-2 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
     @-webkit-keyframes loader-2 {
-        0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
-        50%  { -webkit-transform: translate3d(1.5rem, 0, 0) scale(.5); }
-        100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
+        0% {
+            -webkit-transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+            -webkit-transform: translate3d(1.5rem, 0, 0) scale(0.5);
+        }
+        100% {
+            -webkit-transform: translate3d(0, 0, 0) scale(1);
+        }
     }
     @keyframes loader-2 {
-        0%   { transform: translate3d(0, 0, 0) scale(1); }
-        50%  { transform: translate3d(1.5rem, 0, 0) scale(.5); }
-        100% { transform: translate3d(0, 0, 0) scale(1); }
+        0% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+            transform: translate3d(1.5rem, 0, 0) scale(0.5);
+        }
+        100% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
     }
     .loader::after {
         content: "";
         display: block;
         position: absolute;
-        top: 0; left: auto;
-        bottom: 0; right: 0;
+        top: 0;
+        left: auto;
+        bottom: 0;
+        right: 0;
         margin: auto;
         width: 0.5rem;
         height: 0.5rem;
         background: var(--color-error);
         border-radius: 50%;
-        -webkit-animation: loader-3 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
-                animation: loader-3 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+        -webkit-animation: loader-3 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader-3 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
     @-webkit-keyframes loader-3 {
-        0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
-        50%  { -webkit-transform: translate3d(-1.5rem, 0, 0) scale(.5); }
-        100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
+        0% {
+            -webkit-transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+            -webkit-transform: translate3d(-1.5rem, 0, 0) scale(0.5);
+        }
+        100% {
+            -webkit-transform: translate3d(0, 0, 0) scale(1);
+        }
     }
     @keyframes loader-3 {
-        0%   { transform: translate3d(0, 0, 0) scale(1); }
-        50%  { transform: translate3d(-1.5rem, 0, 0) scale(.5); }
-        100% { transform: translate3d(0, 0, 0) scale(1); }
+        0% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+            transform: translate3d(-1.5rem, 0, 0) scale(0.5);
+        }
+        100% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
     }
     .loader span {
         display: block;
         position: absolute;
-        top: 0; left: 0;
-        bottom: 0; right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
         margin: auto;
         height: 2rem;
         width: 2rem;
@@ -867,49 +914,76 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         content: "";
         display: block;
         position: absolute;
-        top: 0; left: 0;
-        bottom: auto; right: 0;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        right: 0;
         margin: auto;
         width: 0.5rem;
         height: 0.5rem;
         background: var(--color-quaternary);
         border-radius: 50%;
-        -webkit-animation: loader-4 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
-                animation: loader-4 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+        -webkit-animation: loader-4 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader-4 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
     @-webkit-keyframes loader-4 {
-        0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
-        50%  { -webkit-transform: translate3d(0, 1.5rem, 0) scale(.5); }
-        100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
+        0% {
+            -webkit-transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+            -webkit-transform: translate3d(0, 1.5rem, 0) scale(0.5);
+        }
+        100% {
+            -webkit-transform: translate3d(0, 0, 0) scale(1);
+        }
     }
     @keyframes loader-4 {
-        0%   { transform: translate3d(0, 0, 0) scale(1); }
-        50%  { transform: translate3d(0, 1.5rem, 0) scale(.5); }
-        100% { transform: translate3d(0, 0, 0) scale(1); }
+        0% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+            transform: translate3d(0, 1.5rem, 0) scale(0.5);
+        }
+        100% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
     }
     .loader span::after {
         content: "";
         display: block;
         position: absolute;
-        top: auto; left: 0;
-        bottom: 0; right: 0;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        right: 0;
         margin: auto;
         width: 0.5rem;
         height: 0.5rem;
         background: var(--color-secondary);
         border-radius: 50%;
-        -webkit-animation: loader-5 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
-                animation: loader-5 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+        -webkit-animation: loader-5 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader-5 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
     @-webkit-keyframes loader-5 {
-        0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
-        50%  { -webkit-transform: translate3d(0, -1.5rem, 0) scale(.5); }
-        100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
+        0% {
+            -webkit-transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+            -webkit-transform: translate3d(0, -1.5rem, 0) scale(0.5);
+        }
+        100% {
+            -webkit-transform: translate3d(0, 0, 0) scale(1);
+        }
     }
     @keyframes loader-5 {
-        0%   { transform: translate3d(0, 0, 0) scale(1); }
-        50%  { transform: translate3d(0, -1.5rem, 0) scale(.5); }
-        100% { transform: translate3d(0, 0, 0) scale(1); }
+        0% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+            transform: translate3d(0, -1.5rem, 0) scale(0.5);
+        }
+        100% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
     }
-
 }
