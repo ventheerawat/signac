@@ -58,33 +58,33 @@ const LoaderToggle = () => {
 }
   return (
     <div className="App">
-      <p className='H1-reg'>SIGNAC Line OA CSS</p>
-      <div  className={'pop-up animated ' + (alert === '1' ? 'fadeIn' : '')}>
-        <div className='pop-up-dialog shadow-lv2-bottom'>
-          <div className='pop-up-content'>
-           <div className='pop-up-header'>
-                <p className='m-0'>Header</p>
+      <p className='H1_semi_bold'>SIGNAC Line OA CSS</p>
+      <div  className={'pop_up animated ' + (alert === '1' ? 'fadeIn' : '')}>
+        <div className='pop_up_dialog shadow_lv2_bottom'>
+          <div className='pop_up_content'>
+           <div className='pop_up_header'>
+                <p className='m_0'>Header</p>
            </div>
-           <div className='pop-up-body'>
-                <p className='m-0'>description</p>
+           <div className='pop_up_body'>
+                <p className='m_0'>description</p>
            </div>
-           <div className='pop-up-footer'>
-           <button type="button" className='btn btn-primary w-100' onClick={() => PopUpToggle()}>Button</button>
+           <div className='pop_up_footer'>
+           <button type="button" className='btn btn_primary w-100' onClick={() => PopUpToggle()}>Button</button>
            </div>
           </div>
         </div>
       </div>
-      <div className={'loader-overlay animated ' + (loader === '1' ? 'fadeIn' : '')}>
+      <div className={'loader_overlay animated ' + (loader === '1' ? 'fadeIn' : '')}>
         <div className='loader center'><span></span></div>
       </div>
-      <div className={'toast-overlay animated ' + (show === '1' ? 'bounceInDown' : '')} >
-        <div className='toast toast-success toast-btn-close'>
+      <div className={'toast_overlay animated ' + (show === '1' ? 'bounceInDown' : '')} >
+        <div className='toast toast_success toast_btn_close'>
           <div className='icon'>
             <span></span>
           </div>
           <div className='content'>
-            <p className='toast-tittle'>Success header</p>
-            <p className='toast-description'>Description</p>
+            <p className='toast_tittle'>Success header</p>
+            <p className='toast_description'>Description</p>
           </div>
           <div className='close'>
             <button onClick={() => ToastToggle()}>
@@ -107,7 +107,7 @@ const LoaderToggle = () => {
                 <h3>Default Input</h3>
                 <Grid item xs={12} md={4} lg={3} >
                   <Item sx={{ boxShadow: 0 }}>
-                    <div className='form-floating h1-semi-bold'>
+                    <div className='form_floating h1-semi-bold'>
                       <input type="text" id='idcard' placeholder='Textfield label' />
                       <label htmlFor="idcard">Textfield label</label>
                     </div>
@@ -118,7 +118,7 @@ const LoaderToggle = () => {
                     <pre>
                       <code className='language-html'>
                         {`
-                         <div className='form-floating'>
+                         <div className='form_floating'>
                           <input type="text" id='idcard' placeholder='Textfield label' />
                           <label htmlFor="idcard">Textfield label</label>
                        </div>
@@ -133,13 +133,13 @@ const LoaderToggle = () => {
             <Grid item xs={12}>
               <Item sx={{ boxShadow: 0 }}>
                 <h3>Error</h3>
-                <small>The input is not vilidate please add the className '.form-error' in div tag</small>
+                <small>The input is not vilidate please add the className '.form_error' in div tag</small>
                 <Grid item xs={12} md={4} lg={3} >
                   <Item sx={{ boxShadow: 0 }}>
-                    <div className='form-floating form-error'>
+                    <div className='form_floating form_error'>
                       <input type="text" id='idcard' placeholder='Textfield label' defaultValue={'Input Text'} />
                       <label htmlFor="idcard">Textfield label</label>
-                      <span className='error-message'>Error message</span>
+                      <span className='error_message'>Error message</span>
                     </div>
                   </Item>
                 </Grid>
@@ -148,10 +148,10 @@ const LoaderToggle = () => {
                     <pre>
                       <code className='language-html'>
                         {`
-                        <div className='form-floating form-error'>
+                        <div className='form_floating form_error'>
                           <input type="text" id='idcard' placeholder='Textfield label' defaultValue={'Input Text'} />
                           <label htmlFor="idcard">Textfield label</label>
-                          <span className='error-message'>Error message</span>
+                          <span className='error_message'>Error message</span>
                         </div>
                         `}
                       </code>
@@ -166,7 +166,7 @@ const LoaderToggle = () => {
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={3}>
                     <Item sx={{ boxShadow: 0 }}>
-                      <div className='form-floating '>
+                      <div className='form_floating '>
                         <input type="text" id='idcard' placeholder='Textfield label' disabled />
                         <label htmlFor="idcard">Textfield label</label>
                       </div>
@@ -174,7 +174,7 @@ const LoaderToggle = () => {
                   </Grid>
                   <Grid item xs={12} md={3}>
                     <Item sx={{ boxShadow: 0 }}>
-                      <div className='form-floating '>
+                      <div className='form_floating '>
                         <input type="text" id='idcard' placeholder='Textfield label' defaultValue={'Input Text'} disabled />
                         <label htmlFor="idcard">Textfield label</label>
                       </div>
@@ -186,11 +186,11 @@ const LoaderToggle = () => {
                     <pre>
                       <code className='language-html'>
                         {`
-                         <div className='form-floating '>
+                         <div className='form_floating '>
                           <input type="text" id='idcard' placeholder='Textfield label' disabled />
                           <label htmlFor="idcard">Textfield label</label>
                          </div>
-                         <div className='form-floating '>
+                         <div className='form_floating '>
                           <input type="text" id='idcard' placeholder='Textfield label' defaultValue={'Input Text'} disabled />
                           <label htmlFor="idcard">Textfield label</label>
                         </div>
@@ -212,7 +212,7 @@ const LoaderToggle = () => {
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Default OTP</h3>
                       <br />
-                      <div className='form-input-opt'>
+                      <div className='form_input_opt'>
                         <input type="text" maxLength={1} required />
                         <input type="text" maxLength={1} required />
                         <input type="text" maxLength={1} required />
@@ -224,7 +224,7 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form-input-opt'>
+                        <div className='form_input_opt'>
                           <input type="text" maxLength={1} required/>
                           <input type="text" maxLength={1} required/>
                           <input type="text" maxLength={1} required/>
@@ -241,7 +241,7 @@ const LoaderToggle = () => {
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Disabled OTP</h3>
                       <br />
-                      <div className='form-input-opt'>
+                      <div className='form_input_opt'>
                         <input type="text" maxLength={1} defaultValue={0} required disabled />
                         <input type="text" maxLength={1} defaultValue={1} required disabled />
                         <input type="text" maxLength={1} defaultValue={2} required disabled />
@@ -253,7 +253,7 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form-input-opt'>
+                        <div className='form_input_opt'>
                           <input type="text" maxLength={1} defaultValue={0} required disabled/>
                           <input type="text" maxLength={1} defaultValue={1} required disabled/>
                           <input type="text" maxLength={1} defaultValue={2} required disabled/>
@@ -272,7 +272,7 @@ const LoaderToggle = () => {
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Default PIN</h3>
                       <br />
-                      <div className='form-input-pin'>
+                      <div className='form_input_pin'>
                         <span className='validated'></span>
                         <span className='validated'></span>
                         <span></span>
@@ -284,7 +284,7 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form-input-pin'>
+                        <div className='form_input_pin'>
                           <span className='validated'></span>
                           <span className='validated'></span>
                           <span></span>
@@ -301,7 +301,7 @@ const LoaderToggle = () => {
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Disabled OTP</h3>
                       <br />
-                      <div className='form-input-pin'>
+                      <div className='form_input_pin'>
                         <span className='disabled'></span>
                         <span className='disabled'></span>
                         <span className='disabled'></span>
@@ -313,7 +313,7 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                         <div className='form-input-pin'>
+                         <div className='form_input_pin'>
                           <span className='disabled'></span>
                           <span className='disabled'></span>
                           <span className='disabled'></span>
@@ -340,12 +340,12 @@ const LoaderToggle = () => {
                   <Grid item xs={12} md={6}>
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Primary CTA</h3>
-                      <p>className : '.btn-primary'</p>
-                      <button type="button" className='btn btn-primary'>Button Primary</button>
+                      <p>className : '.btn_primary'</p>
+                      <button type="button" className='btn btn_primary'>Button Primary</button>
                       <br /> <br />
                       <pre>
                         <code className='language-html'>
-                          {`<button type="button" className='btn btn-primary'>Button Primary</button>`}
+                          {`<button type="button" className='btn btn_primary'>Button Primary</button>`}
                         </code>
                       </pre>
                     </Item>
@@ -354,11 +354,11 @@ const LoaderToggle = () => {
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Disable CTA</h3>
                       <p>add disabled attribute to button element</p>
-                      <button type="button" className='btn btn-primary' disabled>Button Primary</button>
+                      <button type="button" className='btn btn_primary' disabled>Button Primary</button>
                       <br /> <br />
                       <pre>
                         <code className='language-html'>
-                          {`<button type="button" className='btn btn-primary' disabled >Button Primary</button>`}
+                          {`<button type="button" className='btn btn_primary' disabled >Button Primary</button>`}
                         </code>
                       </pre>
                     </Item>
@@ -368,12 +368,12 @@ const LoaderToggle = () => {
                   <Grid item xs={12} md={6}>
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Secondary CTA</h3>
-                      <p>className : '.btn-secondary'</p>
-                      <button type="button" className='btn btn-secondary'>Button Primary</button>
+                      <p>className : '.btn_secondary'</p>
+                      <button type="button" className='btn btn_secondary'>Button Primary</button>
                       <br /> <br />
                       <pre>
                         <code className='language-html'>
-                          {`<button type="button" className='btn btn-secondary'>Button Primary</button>`}
+                          {`<button type="button" className='btn btn_secondary'>Button Primary</button>`}
                         </code>
                       </pre>
                     </Item>
@@ -382,11 +382,11 @@ const LoaderToggle = () => {
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Disable Secondary CTA</h3>
                       <p>add disabled attribute to button element</p>
-                      <button type="button" className='btn btn-secondary' disabled>Button Primary</button>
+                      <button type="button" className='btn btn_secondary' disabled>Button Primary</button>
                       <br /> <br />
                       <pre>
                         <code className='language-html'>
-                          {`<button type="button" className='btn btn-secondary' disabled>Button Primary</button>`}
+                          {`<button type="button" className='btn btn_secondary' disabled>Button Primary</button>`}
                         </code>
                       </pre>
                     </Item>
@@ -404,25 +404,25 @@ const LoaderToggle = () => {
                   <Grid item xs={12} md={6}>
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Checks</h3>
-                      <div className='form-check'>
-                        <input type="checkbox" id='flexCheckDefault' className='form-check-input' />
-                        <label htmlFor="flexCheckDefault" className='form-check-label'>Default checkboxDefault</label>
+                      <div className='form_check'>
+                        <input type="checkbox" id='flexCheckDefault' className='form_check_input' />
+                        <label htmlFor="flexCheckDefault" className='form_check_label'>Default checkboxDefault</label>
                       </div>
-                      <div className='form-check'>
-                        <input type="checkbox" id='flexCheckChecked' className='form-check-input' defaultChecked />
-                        <label htmlFor="flexCheckChecked" className='form-check-label'>Checked checkbox</label>
+                      <div className='form_check'>
+                        <input type="checkbox" id='flexCheckChecked' className='form_check_input' defaultChecked />
+                        <label htmlFor="flexCheckChecked" className='form_check_label'>Checked checkbox</label>
                       </div>
                       <br />
                       <pre>
                         <code className='language-html'>
                           {`
-                         <div className='form-check'>
-                          <input type="checkbox" id='flexCheckDefault' className='form-check-input'/>
-                          <label htmlFor="flexCheckDefault" className='form-check-label'>Default checkboxDefault</label>
+                         <div className='form_check'>
+                          <input type="checkbox" id='flexCheckDefault' className='form_check_input'/>
+                          <label htmlFor="flexCheckDefault" className='form_check_label'>Default checkboxDefault</label>
                        </div>
-                       <div className='form-check'>
-                          <input type="checkbox" id='flexCheckChecked' className='form-check-input' defaultChecked />
-                          <label htmlFor="flexCheckChecked" className='form-check-label'>Checked checkbox</label>
+                       <div className='form_check'>
+                          <input type="checkbox" id='flexCheckChecked' className='form_check_input' defaultChecked />
+                          <label htmlFor="flexCheckChecked" className='form_check_label'>Checked checkbox</label>
                        </div>
                         `}
                         </code>
@@ -433,17 +433,17 @@ const LoaderToggle = () => {
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Disable Checks</h3>
                       <p>add disabled attribute to input type checkbox element</p>
-                      <div className='form-check'>
-                        <input type="checkbox" id='checkdisabled' className='form-check-input' disabled />
-                        <label htmlFor="checkdisabled" className='form-check-label'>Disable checkbox</label>
+                      <div className='form_check'>
+                        <input type="checkbox" id='checkdisabled' className='form_check_input' disabled />
+                        <label htmlFor="checkdisabled" className='form_check_label'>Disable checkbox</label>
                       </div>
                       <br />
                       <pre>
                         <code className='language-html'>
                           {`
-                      <div className='form-check'>
-                        <input type="checkbox" id='checkdisabled' className='form-check-input' disabled />
-                        <label htmlFor="checkdisabled" className='form-check-label'>Disable checkbox</label>
+                      <div className='form_check'>
+                        <input type="checkbox" id='checkdisabled' className='form_check_input' disabled />
+                        <label htmlFor="checkdisabled" className='form_check_label'>Disable checkbox</label>
                       </div>
                       `}
                         </code>
@@ -455,25 +455,25 @@ const LoaderToggle = () => {
                   <Grid item xs={12} md={6}>
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Radio</h3>
-                      <div className='form-radio'>
-                        <input type="radio" id='flexRadioDefault1' name='flexRadioDefault' className='form-radio-input' />
-                        <label htmlFor="flexRadioDefault1" className='form-radio-label'>Default radio</label>
+                      <div className='form_radio'>
+                        <input type="radio" id='flexRadioDefault1' name='flexRadioDefault' className='form_radio_input' />
+                        <label htmlFor="flexRadioDefault1" className='form_radio_label'>Default radio</label>
                       </div>
-                      <div className='form-radio'>
-                        <input type="radio" id='flexRadioDefault2' name='flexRadioDefault' className='form-radio-input' defaultChecked />
-                        <label htmlFor="flexRadioDefault2" className='form-radio-label'>Default checked radio</label>
+                      <div className='form_radio'>
+                        <input type="radio" id='flexRadioDefault2' name='flexRadioDefault' className='form_radio_input' defaultChecked />
+                        <label htmlFor="flexRadioDefault2" className='form_radio_label'>Default checked radio</label>
                       </div>
                       <br />
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form-radio'>
-                          <input type="radio" id='flexRadioDefault1' name='flexRadioDefault' className='form-radio-input'/>
-                          <label htmlFor="flexRadioDefault1" className='form-radio-label'>Default radio</label>
+                        <div className='form_radio'>
+                          <input type="radio" id='flexRadioDefault1' name='flexRadioDefault' className='form_radio_input'/>
+                          <label htmlFor="flexRadioDefault1" className='form_radio_label'>Default radio</label>
                       </div>
-                      <div className='form-radio'>
-                          <input type="radio" id='flexRadioDefault2' name='flexRadioDefault' className='form-radio-input' defaultChecked/>
-                          <label htmlFor="flexRadioDefault2" className='form-radio-label'>Default checked radio</label>
+                      <div className='form_radio'>
+                          <input type="radio" id='flexRadioDefault2' name='flexRadioDefault' className='form_radio_input' defaultChecked/>
+                          <label htmlFor="flexRadioDefault2" className='form_radio_label'>Default checked radio</label>
                       </div>
                         `}
                         </code>
@@ -484,17 +484,17 @@ const LoaderToggle = () => {
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Disable Radio</h3>
                       <p>add disabled attribute to button element</p>
-                      <div className='form-radio'>
-                        <input type="radio" id='disabledradio' name='flexRadioDefault' className='form-radio-input' disabled />
-                        <label htmlFor="disabledradio" className='form-radio-label'>Default radio</label>
+                      <div className='form_radio'>
+                        <input type="radio" id='disabledradio' name='flexRadioDefault' className='form_radio_input' disabled />
+                        <label htmlFor="disabledradio" className='form_radio_label'>Default radio</label>
                       </div>
                       <br />
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form-radio'>
-                          <input type="radio" id='disabledradio' name='flexRadioDefault' className='form-radio-input' disabled/>
-                          <label htmlFor="disabledradio" className='form-radio-label'>Default radio</label>
+                        <div className='form_radio'>
+                          <input type="radio" id='disabledradio' name='flexRadioDefault' className='form_radio_input' disabled/>
+                          <label htmlFor="disabledradio" className='form_radio_label'>Default radio</label>
                       </div>
                         `}
                         </code>
@@ -518,7 +518,7 @@ const LoaderToggle = () => {
                       <Grid container spacing={2}>
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
-                            <div className='form-select'>
+                            <div className='form_select'>
                               <label htmlFor="formselect">Select label</label>
                               <select id='formselect' defaultValue={'0'} >
                                 <option value="0">Open this select menu</option>
@@ -535,7 +535,7 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form-select'>
+                        <div className='form_select'>
                            <label htmlFor="formselect">Select label</label>
                             <select id='formselect' defaultValue={'0'} >
                                 <option value="0">Open this select menu</option> 
@@ -553,11 +553,11 @@ const LoaderToggle = () => {
                   <Grid item xs={12} md={12}>
                     <Item sx={{ boxShadow: 0 }}>
                       <h3>Error</h3>
-                      <p>The select is not vilidate please add the className '.form-select-error' in div tag</p>
+                      <p>The select is not vilidate please add the className '.form_select_error' in div tag</p>
                       <Grid container spacing={2}>
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
-                            <div className='form-select form-select-error'>
+                            <div className='form_select form_select_error'>
                               <label >Select disable label</label>
                               <select id='formselect' defaultValue={'0'} >
                                 <option value="0">Open this select menu</option>
@@ -566,7 +566,7 @@ const LoaderToggle = () => {
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                               </select>
-                              <span className='error-message'>Error message</span>
+                              <span className='error_message'>Error message</span>
                             </div>
                           </Item>
                         </Grid>
@@ -576,7 +576,7 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form-select form-select-error'>
+                        <div className='form_select form_select_error'>
                           <label >Select disable label</label>
                             <select id='formselect' defaultValue={'0'} >
                                 <option value="0">Open this select menu</option> 
@@ -585,7 +585,7 @@ const LoaderToggle = () => {
                                 <option value="3">3</option> 
                                 <option value="4">4</option> 
                             </select>
-                            <span className='error-message'>Error message</span>
+                            <span className='error_message'>Error message</span>
                           </div>
                         `}
                         </code>
@@ -599,7 +599,7 @@ const LoaderToggle = () => {
                       <Grid container spacing={2}>
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
-                            <div className='form-select'>
+                            <div className='form_select'>
                               <label className='label-disable'>Select disable label</label>
                               <select id='formselect' defaultValue={'0'} disabled>
                                 <option value="0">Open this select menu</option>
@@ -616,7 +616,7 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form-select'>
+                        <div className='form_select'>
                             <label className='label-disable'>Select disable label</label>
                             <select id='formselect' defaultValue={'0'} disabled>
                                 <option value="0">Open this select menu</option> 
@@ -648,9 +648,9 @@ const LoaderToggle = () => {
                       <Grid container spacing={2}>
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
-                            <div className='card shadow-lv2-bottom'>
-                              <h3 className='mt-0'>Card title</h3>
-                              <p className='m-0'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div className='card shadow_lv2_bottom'>
+                              <h3 className='mt_0'>Card title</h3>
+                              <p className='m_0'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                           </Item>
                         </Grid>
@@ -659,9 +659,9 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='card shadow-lv2-bottom'>
-                          <h3 className='mt-0'>Card title</h3>
-                          <p className='m-0'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div className='card shadow_lv2_bottom'>
+                          <h3 className='mt_0'>Card title</h3>
+                          <p className='m_0'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         `}
                         </code>
@@ -685,7 +685,7 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={12}>
                           <Item sx={{ boxShadow: 0 ,textAlign: 'center'}}>
                           <p>Example Toast</p>
-                          <button type="button" className='btn btn-primary' onClick={() => ToastToggle()}>Test Toast</button>
+                          <button type="button" className='btn btn_primary' onClick={() => ToastToggle()}>Test Toast</button>
                           </Item>
                         </Grid>
                       </Grid>
@@ -701,30 +701,30 @@ const LoaderToggle = () => {
                           <Item sx={{ boxShadow: 0 }}>
                             <p>Title header only</p>
 
-                            <div className='toast toast-info'>
+                            <div className='toast toast_info'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Title header</p>
+                                <p className='toast_tittle'>Title header</p>
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-success'>
+                            <div className='toast toast_success'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Success header</p>
+                                <p className='toast_tittle'>Success header</p>
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-error'>
+                            <div className='toast toast_error'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Error header</p>
+                                <p className='toast_tittle'>Error header</p>
                               </div>
                             </div>
                             <br />
@@ -734,30 +734,30 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='toast toast-info'>
+                        <div className='toast toast_info'>
                         <div className='icon'>
                           <span></span>
                         </div>
                         <div className='content'>
-                          <p className='toast-tittle'>Info Title header</p>
+                          <p className='toast_tittle'>Info Title header</p>
                         </div>
                       </div>
                       <br/>
-                      <div className='toast toast-success'>
+                      <div className='toast toast_success'>
                         <div className='icon'>
                           <span></span>
                         </div>
                         <div className='content'>
-                          <p className='toast-tittle'>Success Title header</p>
+                          <p className='toast_tittle'>Success Title header</p>
                         </div>
                       </div>
                       <br/>
-                      <div className='toast toast-error'>
+                      <div className='toast toast_error'>
                         <div className='icon'>
                           <span></span>
                         </div>
                         <div className='content'>
-                          <p className='toast-tittle'>Error Title header</p>
+                          <p className='toast_tittle'>Error Title header</p>
                         </div>
                       </div>
                         `}
@@ -773,33 +773,33 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
                             <p>Title header and Description </p>
-                            <div className='toast toast-info'>
+                            <div className='toast toast_info'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Title header</p>
-                                <p className='toast-description'>Description</p>
+                                <p className='toast_tittle'>Title header</p>
+                                <p className='toast_description'>Description</p>
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-success'>
+                            <div className='toast toast_success'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Success header</p>
-                                <p className='toast-description'>Description</p>
+                                <p className='toast_tittle'>Success header</p>
+                                <p className='toast_description'>Description</p>
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-error'>
+                            <div className='toast toast_error'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Error header</p>
-                                <p className='toast-description'>Description</p>
+                                <p className='toast_tittle'>Error header</p>
+                                <p className='toast_description'>Description</p>
                               </div>
                             </div>
                             <br />
@@ -809,33 +809,33 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='toast toast-info'>
+                        <div className='toast toast_info'>
                         <div className='icon'>
                           <span></span>
                         </div>
                         <div className='content'>
-                          <p className='toast-tittle'>Title header</p>
-                          <p className='toast-description'>Description</p>
+                          <p className='toast_tittle'>Title header</p>
+                          <p className='toast_description'>Description</p>
                         </div>
                       </div>
                       <br />
-                      <div className='toast toast-success'>
+                      <div className='toast toast_success'>
                         <div className='icon'>
                           <span></span>
                         </div>
                         <div className='content'>
-                          <p className='toast-tittle'>Success header</p>
-                          <p className='toast-description'>Description</p>
+                          <p className='toast_tittle'>Success header</p>
+                          <p className='toast_description'>Description</p>
                         </div>
                       </div>
                       <br />
-                      <div className='toast toast-error'>
+                      <div className='toast toast_error'>
                         <div className='icon'>
                           <span></span>
                         </div>
                         <div className='content'>
-                          <p className='toast-tittle'>Error header</p>
-                          <p className='toast-description'>Description</p>
+                          <p className='toast_tittle'>Error header</p>
+                          <p className='toast_description'>Description</p>
                         </div>
                       </div>
                         `}
@@ -851,12 +851,12 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
                             <p>Title header with Close Button</p>
-                            <div className='toast toast-info toast-btn-close'>
+                            <div className='toast toast_info toast_btn_close'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Title header</p>
+                                <p className='toast_tittle'>Title header</p>
                               </div>
                               <div className='close'>
                                 <button>
@@ -865,12 +865,12 @@ const LoaderToggle = () => {
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-success toast-btn-close'>
+                            <div className='toast toast_success toast_btn_close'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Success header</p>
+                                <p className='toast_tittle'>Success header</p>
                               </div>
                               <div className='close'>
                                 <button>
@@ -879,12 +879,12 @@ const LoaderToggle = () => {
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-error toast-btn-close'>
+                            <div className='toast toast_error toast_btn_close'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Error header</p>
+                                <p className='toast_tittle'>Error header</p>
                               </div>
                               <div className='close'>
                                 <button>
@@ -899,12 +899,12 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                       <div className='toast toast-info toast-btn-close'>
+                       <div className='toast toast_info toast_btn_close'>
                        <div className='icon'>
                          <span></span>
                        </div>
                        <div className='content'>
-                         <p className='toast-tittle'>Title header</p>
+                         <p className='toast_tittle'>Title header</p>
                        </div>
                        <div className='close'>
                          <button>
@@ -913,12 +913,12 @@ const LoaderToggle = () => {
                        </div>
                      </div>
                      <br/>
-                     <div className='toast toast-success toast-btn-close'>
+                     <div className='toast toast_success toast_btn_close'>
                        <div className='icon'>
                          <span></span>
                        </div>
                        <div className='content'>
-                         <p className='toast-tittle'>Success header</p>
+                         <p className='toast_tittle'>Success header</p>
                        </div>
                        <div className='close'>
                          <button>
@@ -927,12 +927,12 @@ const LoaderToggle = () => {
                        </div>
                      </div>
                      <br/>
-                     <div className='toast toast-error toast-btn-close'>
+                     <div className='toast toast_error toast_btn_close'>
                        <div className='icon'>
                          <span></span>
                        </div>
                        <div className='content'>
-                         <p className='toast-tittle'>Error header</p>
+                         <p className='toast_tittle'>Error header</p>
                        </div>
                        <div className='close'>
                          <button>
@@ -953,13 +953,13 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
                             <p>Title header and Description with Close Button</p>
-                            <div className='toast toast-info toast-btn-close'>
+                            <div className='toast toast_info toast_btn_close'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Title header</p>
-                                <p className='toast-description'>Description</p>
+                                <p className='toast_tittle'>Title header</p>
+                                <p className='toast_description'>Description</p>
                               </div>
                               <div className='close'>
                                 <button>
@@ -968,13 +968,13 @@ const LoaderToggle = () => {
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-success toast-btn-close'>
+                            <div className='toast toast_success toast_btn_close'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Success header</p>
-                                <p className='toast-description'>Description</p>
+                                <p className='toast_tittle'>Success header</p>
+                                <p className='toast_description'>Description</p>
                               </div>
                               <div className='close'>
                                 <button>
@@ -983,13 +983,13 @@ const LoaderToggle = () => {
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-error toast-btn-close'>
+                            <div className='toast toast_error toast_btn_close'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Error header</p>
-                                <p className='toast-description'>Description</p>
+                                <p className='toast_tittle'>Error header</p>
+                                <p className='toast_description'>Description</p>
                               </div>
                               <div className='close'>
                                 <button>
@@ -1004,13 +1004,13 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                       <div className='toast toast-info toast-btn-close'>
+                       <div className='toast toast_info toast_btn_close'>
                        <div className='icon'>
                          <span></span>
                        </div>
                        <div className='content'>
-                         <p className='toast-tittle'>Title header</p>
-                         <p className='toast-description'>Description</p>
+                         <p className='toast_tittle'>Title header</p>
+                         <p className='toast_description'>Description</p>
                        </div>
                        <div className='close'>
                          <button>
@@ -1019,13 +1019,13 @@ const LoaderToggle = () => {
                        </div>
                      </div>
                      <br/>
-                     <div className='toast toast-success toast-btn-close'>
+                     <div className='toast toast_success toast_btn_close'>
                        <div className='icon'>
                          <span></span>
                        </div>
                        <div className='content'>
-                         <p className='toast-tittle'>Success header</p>
-                         <p className='toast-description'>Description</p>
+                         <p className='toast_tittle'>Success header</p>
+                         <p className='toast_description'>Description</p>
                        </div>
                        <div className='close'>
                          <button>
@@ -1034,13 +1034,13 @@ const LoaderToggle = () => {
                        </div>
                      </div>
                      <br/>
-                     <div className='toast toast-error toast-btn-close'>
+                     <div className='toast toast_error toast_btn_close'>
                        <div className='icon'>
                          <span></span>
                        </div>
                        <div className='content'>
-                         <p className='toast-tittle'>Error header</p>
-                         <p className='toast-description'>Description</p>
+                         <p className='toast_tittle'>Error header</p>
+                         <p className='toast_description'>Description</p>
                        </div>
                        <div className='close'>
                          <button>
@@ -1061,33 +1061,33 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
                             <p>Title header only</p>
-                            <div className='toast toast-info'>
+                            <div className='toast toast_info'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Title header</p>
-                                <button className='btn-link'>Action</button>
+                                <p className='toast_tittle'>Title header</p>
+                                <button className='btn_link'>Action</button>
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-success'>
+                            <div className='toast toast_success'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Success header</p>
-                                <button className='btn-link'>Action</button>
+                                <p className='toast_tittle'>Success header</p>
+                                <button className='btn_link'>Action</button>
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-error'>
+                            <div className='toast toast_error'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Error header</p>
-                                <button className='btn-link'>Action</button>
+                                <p className='toast_tittle'>Error header</p>
+                                <button className='btn_link'>Action</button>
                               </div>
                             </div>
                             <br />
@@ -1097,33 +1097,33 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                         <div className='toast toast-info'>
+                         <div className='toast toast_info'>
                          <div className='icon'>
                            <span></span>
                          </div>
                          <div className='content'>
-                           <p className='toast-tittle'>Title header</p>
-                           <button className='btn-link'>Action</button>
+                           <p className='toast_tittle'>Title header</p>
+                           <button className='btn_link'>Action</button>
                          </div>
                        </div>
                        <br/>
-                       <div className='toast toast-success'>
+                       <div className='toast toast_success'>
                          <div className='icon'>
                            <span></span>
                          </div>
                          <div className='content'>
-                           <p className='toast-tittle'>Success header</p>
-                           <button className='btn-link'>Action</button>
+                           <p className='toast_tittle'>Success header</p>
+                           <button className='btn_link'>Action</button>
                          </div>
                        </div>
                        <br/>
-                       <div className='toast toast-error'>
+                       <div className='toast toast_error'>
                          <div className='icon'>
                            <span></span>
                          </div>
                          <div className='content'>
-                           <p className='toast-tittle'>Error header</p>
-                           <button className='btn-link'>Action</button>
+                           <p className='toast_tittle'>Error header</p>
+                           <button className='btn_link'>Action</button>
                          </div>
                        </div>
                         `}
@@ -1139,36 +1139,36 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
                             <p>Title header and Description </p>
-                            <div className='toast toast-info'>
+                            <div className='toast toast_info'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Title header</p>
-                                <p className='toast-description'>Description</p>
-                                <button className='btn-link'>Action</button>
+                                <p className='toast_tittle'>Title header</p>
+                                <p className='toast_description'>Description</p>
+                                <button className='btn_link'>Action</button>
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-success'>
+                            <div className='toast toast_success'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Success header</p>
-                                <p className='toast-description'>Success Description</p>
-                                <button className='btn-link'>Action</button>
+                                <p className='toast_tittle'>Success header</p>
+                                <p className='toast_description'>Success Description</p>
+                                <button className='btn_link'>Action</button>
                               </div>
                             </div>
                             <br />
-                            <div className='toast toast-error'>
+                            <div className='toast toast_error'>
                               <div className='icon'>
                                 <span></span>
                               </div>
                               <div className='content'>
-                                <p className='toast-tittle'>Error header</p>
-                                <p className='toast-description'>Error Description</p>
-                                <button className='btn-link'>Action</button>
+                                <p className='toast_tittle'>Error header</p>
+                                <p className='toast_description'>Error Description</p>
+                                <button className='btn_link'>Action</button>
                               </div>
                             </div>
                             <br />
@@ -1178,33 +1178,33 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='toast toast-info'>
+                        <div className='toast toast_info'>
                         <div className='icon'>
                           <span></span>
                         </div>
                         <div className='content'>
-                          <p className='toast-tittle'>Title header</p>
-                          <p className='toast-description'>Description</p>
+                          <p className='toast_tittle'>Title header</p>
+                          <p className='toast_description'>Description</p>
                         </div>
                       </div>
                       <br />
-                      <div className='toast toast-success'>
+                      <div className='toast toast_success'>
                         <div className='icon'>
                           <span></span>
                         </div>
                         <div className='content'>
-                          <p className='toast-tittle'>Success header</p>
-                          <p className='toast-description'>Description</p>
+                          <p className='toast_tittle'>Success header</p>
+                          <p className='toast_description'>Description</p>
                         </div>
                       </div>
                       <br />
-                      <div className='toast toast-error'>
+                      <div className='toast toast_error'>
                         <div className='icon'>
                           <span></span>
                         </div>
                         <div className='content'>
-                          <p className='toast-tittle'>Error header</p>
-                          <p className='toast-description'>Description</p>
+                          <p className='toast_tittle'>Error header</p>
+                          <p className='toast_description'>Description</p>
                         </div>
                       </div>
                         `}
@@ -1232,7 +1232,7 @@ const LoaderToggle = () => {
                             <Grid item xs={12} md={12}>
                               <Item sx={{ boxShadow: 0 ,textAlign: 'center'}}>
                               <p>Example Popup</p>
-                              <button type="button" className='btn btn-primary' onClick={() => PopUpToggle()}>Show Popup</button>
+                              <button type="button" className='btn btn_primary' onClick={() => PopUpToggle()}>Show Popup</button>
                               </Item>
                             </Grid>
                           </Grid>
@@ -1244,17 +1244,17 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className={'pop-up animated ' + (alert === '1' ? 'fadeIn' : '')}>
-                        <div className='pop-up-dialog shadow-lv2-bottom'>
-                          <div className='pop-up-content'>
-                           <div className='pop-up-header'>
-                                <p className='m-0'>Header</p>
+                        <div className={'pop_up animated ' + (alert === '1' ? 'fadeIn' : '')}>
+                        <div className='pop_up_dialog shadow_lv2_bottom'>
+                          <div className='pop_up_content'>
+                           <div className='pop_up_header'>
+                                <p className='m_0'>Header</p>
                            </div>
-                           <div className='pop-up-body'>
-                                <p className='m-0'>description</p>
+                           <div className='pop_up_body'>
+                                <p className='m_0'>description</p>
                            </div>
-                           <div className='pop-up-footer'>
-                           <button type="button" className='btn btn-primary w-100' onClick={() => PopUpToggle()}>Button</button>
+                           <div className='pop_up_footer'>
+                           <button type="button" className='btn btn_primary w-100' onClick={() => PopUpToggle()}>Button</button>
                            </div>
                           </div>
                         </div>
@@ -1282,7 +1282,7 @@ const LoaderToggle = () => {
                             <Grid item xs={12} md={12}>
                               <Item sx={{ boxShadow: 0 ,textAlign: 'center'}}>
                               <p>Example Loading</p>
-                              <button type="button" className='btn btn-primary' onClick={() => LoaderToggle()}>Show Loading</button>
+                              <button type="button" className='btn btn_primary' onClick={() => LoaderToggle()}>Show Loading</button>
                               <p>(Example Toast : The Loading will be stopped automatically after 5 seconds)</p>
                               </Item>
                             </Grid>
@@ -1295,7 +1295,7 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                         <div className={'loader-overlay animated ' + (loader === '1' ? 'fadeIn' : '')}>
+                         <div className={'loader_overlay animated ' + (loader === '1' ? 'fadeIn' : '')}>
                           <div className='loader center'><span></span></div>
                         </div>
                         `}

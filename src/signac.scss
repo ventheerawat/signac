@@ -26,78 +26,78 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     src: url(fonts/IBMPlexSansThaiLooped-Regular.ttf);
 }
 
-.H1-semi-bold {
+.H1_semi_bold {
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 2.25rem;
     line-height: 3.25rem;
 }
-.H1-reg {
+.H1_reg {
     font-family: $IBMPlexSansThai-Regular;
     font-size: 2.25rem;
     line-height: 3.25rem;
 }
-.H2-semi-bold {
+.H2_semi_bold {
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 2rem;
     line-height: 3rem;
 }
-.H2-reg {
+.H2_reg {
     font-family: $IBMPlexSansThai-Regular;
     font-size: 2rem;
     line-height: 3rem;
 }
-.S1-med {
+.S1_med {
     font-family: $IBMPlexSansThai-Medium;
     font-size: 1.75rem;
     line-height: 2.625rem;
 }
-.S1-reg {
+.S1_reg {
     font-family: $IBMPlexSansThai-Regular;
     font-size: 1.75rem;
     line-height: 2.625rem;
 }
-.S2-med {
+.S2_med {
     font-family: $IBMPlexSansThai-Medium;
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
-.S2-reg {
+.S2_reg {
     font-family: $IBMPlexSansThai-Regular;
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
-.body-med {
+.body_med {
     font-family: $IBMPlexSansThai-Medium;
     font-size: 1rem;
     line-height: 1.65rem;
 }
-.body-reg {
+.body_reg {
     font-family: $IBMPlexSansThai-Regular;
     font-size: 1rem;
     line-height: 1.65rem;
 }
-.body-reg-looped {
+.body_reg_looped {
     font-family: $IBMPlexSansThai-Looped-Regular;
     font-size: 1rem;
     line-height: 1.65rem;
 }
-.button-semi-bold {
+.button_semi_bold {
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 1rem;
     line-height: 1.65rem;
 }
-.overline-semi-bold {
+.overline_semi_bold {
     font-family: $IBMPlexSansThai-SemiBold;
     font-size: 0.75rem;
     line-height: 1.238rem;
 }
-.caption-med {
+.caption_med {
     font-family: $IBMPlexSansThai-Medium;
     font-size: 0.75rem;
     line-height: 1.238rem;
 }
 
-.form-floating {
+.form_floating {
     position: relative;
     margin-top: 1.75rem;
     font-family: $IBMPlexSansThai-Regular;
@@ -152,7 +152,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.form-error {
+.form_error {
     input {
         border: 0.125rem solid var(--color-error);
         &:focus ~ label,
@@ -160,7 +160,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             color: var(--color-error);
         }
     }
-    .error-message {
+    .error_message {
         font-family: $IBMPlexSansThai-Regular;
         font-size: 0.75rem;
         line-height: 1.25rem;
@@ -169,7 +169,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.form-input-opt {
+.form_input_opt {
     text-align: center;
     input {
         text-align: center;
@@ -195,7 +195,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.form-input-pin {
+.form_input_pin {
     text-align: center;
     span {
         display: inline-block;
@@ -215,7 +215,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.form-select {
+.form_select {
     position: relative;
     select {
         display: block;
@@ -276,7 +276,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.form-select-error {
+.form_select_error {
     select {
         border: 0.125rem solid var(--color-error);
         background-image: url("./assets/icon/expand_more_24px_error.svg");
@@ -284,7 +284,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     label {
         color: var(--color-error);
     }
-    .error-message {
+    .error_message {
         font-family: $IBMPlexSansThai-Regular;
         font-size: 0.75rem;
         line-height: 1.25rem;
@@ -311,58 +311,60 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     transition: $transition;
 }
 
-.btn-primary {
+.btn_primary {
     color: var(--color-on-secondary);
     background-color: var(--color-secondary);
-}
-.btn-primary:hover {
-    color: var(--color-on-secondary);
-    background-color: var(--color-hover-secondary);
-}
-.btn-primary:active {
-    outline: none;
-    color: var(--color-on-secondary);
-    background-color: var(--color-pressed-secondary);
-    -webkit-tap-highlight-color: var(--color-transparent);
+    &:hover {
+        color: var(--color-on-secondary);
+        background-color: var(--color-hover-secondary);
+    }
+    &:active {
+        outline: none;
+        color: var(--color-on-secondary);
+        background-color: var(--color-pressed-secondary);
+        -webkit-tap-highlight-color: var(--color-transparent);
+    }
+    
+    &:disabled {
+        cursor: default;
+        color: var(--color-on-surface-disabled);
+        background-color: var(--color-surface-disabled);
+    }
 }
 
-.btn-primary:disabled {
-    cursor: default;
-    color: var(--color-on-surface-disabled);
-    background-color: var(--color-surface-disabled);
-}
 
 .w-100 {
     width: 100%;
 }
 
-.btn-secondary {
+.btn_secondary {
     border: 0.125rem solid var(--color-secondary);
     color: var(--color-secondary);
     background-color: var(--color-transparent);
-}
-.btn-secondary:hover {
-    border: 0.125rem solid var(--color-hover-secondary);
-    color: var(--color-hover-secondary);
-    background-color: var(--color-transparent);
-}
-.btn-secondary:active {
-    border: 0.125rem solid var(--color-pressed-secondary);
-    color: var(--color-pressed-secondary);
-    background-color: var(--color-transparent);
+    &:hover {
+        border: 0.125rem solid var(--color-hover-secondary);
+        color: var(--color-hover-secondary);
+        background-color: var(--color-transparent);
+    }
+    &:active {
+        border: 0.125rem solid var(--color-pressed-secondary);
+        color: var(--color-pressed-secondary);
+        background-color: var(--color-transparent);
+    }
+    
+    &:disabled {
+        cursor: default;
+        border: 0.125rem solid var(--color-surface-disabled);
+        color: var(--color-on-surface-disabled);
+        background-color: var(--color-transparent);
+    }
 }
 
-.btn-secondary:disabled {
-    cursor: default;
-    border: 0.125rem solid var(--color-surface-disabled);
-    color: var(--color-on-surface-disabled);
-    background-color: var(--color-transparent);
-}
 
-.form-check {
+.form_check {
     display: block;
     padding-left: 1.188rem;
-    .form-check-input[type="checkbox"] {
+    .form_check_input[type="checkbox"] {
         float: left;
         margin-left: -1.188rem;
         appearance: none;
@@ -393,7 +395,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         }
     }
 
-    .form-check-label {
+    .form_check_label {
         font-family: $IBMPlexSansThai-Regular;
         font-size: 1rem;
         line-height: 1.65rem;
@@ -402,10 +404,10 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.form-radio {
+.form_radio {
     display: block;
     padding-left: 1.188rem;
-    .form-radio-input[type="radio"] {
+    .form_radio_input[type="radio"] {
         float: left;
         margin-left: -1.188rem;
         appearance: none;
@@ -434,7 +436,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         }
     }
     
-    .form-radio-label {
+    .form_radio_label {
         font-family: $IBMPlexSansThai-Regular;
         font-size: 1rem;
         line-height: 1.65rem;
@@ -491,7 +493,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     transform-origin: center bottom;
 }
 
-.toast-overlay {
+.toast_overlay {
     position: fixed;
     top: 0.5rem;
     left: 0;
@@ -523,21 +525,21 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         border-color: var(--color-transparent);
         text-align: left;
         padding-right: 1rem;
-        .toast-tittle {
+        .toast_tittle {
             font-family: $IBMPlexSansThai-Medium;
             margin-top: 0;
             margin-bottom: 0;
             font-size: 1rem;
             line-height: 1.65rem;
         }
-        .toast-description {
+        .toast_description {
             font-family: $IBMPlexSansThai-Regular;
             margin-top: 0;
             margin-bottom: 0;
             font-size: 1rem;
             line-height: 1.65rem;
         }
-        .btn-link {
+        .btn_link {
             cursor: pointer;
             outline: none;
             background-color: var(--color-transparent);
@@ -546,10 +548,11 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             font-family: $IBMPlexSansThai-SemiBold;
             padding: 0;
             height: 1.625rem;
+            &:active {
+                -webkit-tap-highlight-color: var(--color-transparent);
+            }
         }
-        .btn-link:active {
-            -webkit-tap-highlight-color: var(--color-transparent);
-        }
+        
     }
     .close {
         position: absolute;
@@ -590,7 +593,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.toast-info {
+.toast_info {
     color: var(--color-on-secondary-container);
     background-color: var(--color-on-secondary);
     .icon {
@@ -599,7 +602,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         }
     }
     .content {
-        .btn-link {
+        .btn_link {
             color: var(--color-secondary);
         }
     }
@@ -611,7 +614,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         }
     }
 }
-.toast-success {
+.toast_success {
     color: var(--color-on-success-container);
     background-color: var(--color-success-container);
     .icon {
@@ -620,7 +623,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         }
     }
     .content {
-        .btn-link {
+        .btn_link {
             color: var(--color-on-success-container);
         }
     }
@@ -632,7 +635,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         }
     }
 }
-.toast-error {
+.toast_error {
     color: var(--color-on-error-container);
     background-color: var(--color-error-container);
     .icon {
@@ -641,7 +644,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         }
     }
     .content {
-        .btn-link {
+        .btn_link {
             color: var(--color-on-error-container);
         }
     }
@@ -654,64 +657,64 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.toast-btn-close {
+.toast_btn_close {
     .content {
         margin-right: 4.5rem;
     }
 }
 
-.toast-info.toast-btn-close {
+.toast_info.toast_btn_close {
     .content {
         border-right: 0.063rem solid var(--color-secondary);
     }
 }
 
-.toast-success.toast-btn-close {
+.toast_success.toast_btn_close {
     .content {
         border-right: 0.063rem solid var(--color-on-success-container);
     }
 }
 
-.toast-error.toast-btn-close {
+.toast_error.toast_btn_close {
     .content {
         border-right: 0.063rem solid var(--color-on-error-container);
     }
 }
 
-.shadow-none {
+.shadow_none {
     box-shadow: none !important;
 }
 
-.shadow-lv1-top {
+.shadow_lv1_top {
     box-shadow: 0 -0.375rem 0.5rem -0.375rem rgba(24, 39, 75, 0.12), 0 -0.5rem 1rem -0.375rem rgba(24, 39, 75, 0.08);
 }
-.shadow-lv1-bottom {
+.shadow_lv1_bottom {
     box-shadow: 0 0.375rem 0.5rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.5rem 1rem -0.375rem rgba(24, 39, 75, 0.08);
 }
 
-.shadow-lv2-top {
+.shadow_lv2_top {
     box-shadow: 0 -0.375rem 0.875rem -0.375rem rgba(24, 39, 75, 0.12), 0 -0.625rem 2rem -0.25rem rgba(24, 39, 75, 0.1);
 }
-.shadow-lv2-bottom {
+.shadow_lv2_bottom {
     box-shadow: 0 0.375rem 0.875rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.625rem 2rem -0.25rem rgba(24, 39, 75, 0.1);
 }
 
-.shadow-lv3-top {
+.shadow_lv3_top {
     box-shadow: 0 -0.5rem 1.375rem -0.375rem rgba(24, 39, 75, 0.12), 0 -0.875rem 4rem -0.25rem rgba(24, 39, 75, 0.12);
 }
-.shadow-lv3-bottom {
+.shadow_lv3_bottom {
     box-shadow: 0 0.5rem 1.375rem -0.375rem rgba(24, 39, 75, 0.12), 0 0.875rem 4rem -0.25rem rgba(24, 39, 75, 0.12);
 }
 
-.m-0 {
+.m_0 {
     margin: 0;
 }
 
-.mt-0 {
+.mt_0 {
     margin-top: 0;
 }
 
-.p-0 {
+.p_0 {
     padding: 0;
 }
 
@@ -728,7 +731,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.pop-up {
+.pop_up {
     display: none;
     background-color: rgba(32, 28, 0, 0.2);
     backdrop-filter: blur(1.25rem);
@@ -741,20 +744,19 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
     z-index: 99999 !important;
 }
-.pop-up-dialog {
+.pop_up_dialog {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    .pop-up-content {
+    .pop_up_content {
         padding: 1.5rem 1rem;
         width: 100%;
         max-width: 17.5rem;
         margin: 0 2.5rem;
         border-radius: 1rem;
         background: white;
-
-        .pop-up-header {
+        .pop_up_header {
             text-align: center;
             font-family: $IBMPlexSansThai-Medium;
             font-size: 1.25rem;
@@ -762,14 +764,14 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             color: var(--color-secondary);
             margin-bottom: 1rem;
         }
-        .pop-up-body {
+        .pop_up_body {
             font-family: $IBMPlexSansThai-Regular;
             text-align: center;
             font-size: 1rem;
             line-height: 1.65rem;
             margin-bottom: 1.5rem;
         }
-        .pop-up-footer {
+        .pop_up_footer {
             button {
                 margin-bottom: 1.5rem;
             }
@@ -780,7 +782,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-.loader-overlay {
+.loader_overlay {
     display: none;
     background-color: rgba(32, 28, 0, 0.2);
     backdrop-filter: blur(1.25rem);
@@ -804,10 +806,10 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     .loader {
         height: 2rem;
         width: 2rem;
-        -webkit-animation: loader-1 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-        animation: loader-1 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        -webkit-animation: loader_1 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader_1 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
-    @-webkit-keyframes loader-1 {
+    @-webkit-keyframes loader_1 {
         0% {
             -webkit-transform: rotate(0deg);
         }
@@ -815,7 +817,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             -webkit-transform: rotate(360deg);
         }
     }
-    @keyframes loader-1 {
+    @keyframes loader_1 {
         0% {
             transform: rotate(0deg);
         }
@@ -836,10 +838,10 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         height: 0.5rem;
         background: var(--color-primary);
         border-radius: 50%;
-        -webkit-animation: loader-2 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-        animation: loader-2 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        -webkit-animation: loader_2 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader_2 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
-    @-webkit-keyframes loader-2 {
+    @-webkit-keyframes loader_2 {
         0% {
             -webkit-transform: translate3d(0, 0, 0) scale(1);
         }
@@ -850,7 +852,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             -webkit-transform: translate3d(0, 0, 0) scale(1);
         }
     }
-    @keyframes loader-2 {
+    @keyframes loader_2 {
         0% {
             transform: translate3d(0, 0, 0) scale(1);
         }
@@ -874,10 +876,10 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         height: 0.5rem;
         background: var(--color-error);
         border-radius: 50%;
-        -webkit-animation: loader-3 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-        animation: loader-3 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        -webkit-animation: loader_3 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader_3 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
-    @-webkit-keyframes loader-3 {
+    @-webkit-keyframes loader_3 {
         0% {
             -webkit-transform: translate3d(0, 0, 0) scale(1);
         }
@@ -888,7 +890,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             -webkit-transform: translate3d(0, 0, 0) scale(1);
         }
     }
-    @keyframes loader-3 {
+    @keyframes loader_3 {
         0% {
             transform: translate3d(0, 0, 0) scale(1);
         }
@@ -923,10 +925,10 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         height: 0.5rem;
         background: var(--color-quaternary);
         border-radius: 50%;
-        -webkit-animation: loader-4 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-        animation: loader-4 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        -webkit-animation: loader_4 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader_4 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
-    @-webkit-keyframes loader-4 {
+    @-webkit-keyframes loader_4 {
         0% {
             -webkit-transform: translate3d(0, 0, 0) scale(1);
         }
@@ -937,7 +939,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             -webkit-transform: translate3d(0, 0, 0) scale(1);
         }
     }
-    @keyframes loader-4 {
+    @keyframes loader_4 {
         0% {
             transform: translate3d(0, 0, 0) scale(1);
         }
@@ -961,10 +963,10 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         height: 0.5rem;
         background: var(--color-secondary);
         border-radius: 50%;
-        -webkit-animation: loader-5 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-        animation: loader-5 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        -webkit-animation: loader_5 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        animation: loader_5 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
     }
-    @-webkit-keyframes loader-5 {
+    @-webkit-keyframes loader_5 {
         0% {
             -webkit-transform: translate3d(0, 0, 0) scale(1);
         }
@@ -975,7 +977,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             -webkit-transform: translate3d(0, 0, 0) scale(1);
         }
     }
-    @keyframes loader-5 {
+    @keyframes loader_5 {
         0% {
             transform: translate3d(0, 0, 0) scale(1);
         }
