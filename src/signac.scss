@@ -1,198 +1,248 @@
 @import "defaultTheme.scss";
+
 :root {
     font-size: 16px;
 }
 
 $transition: all 0.2s ease;
 //font name
-$IBMPlexSansThai-Regular: "IBMPlexSansThai-Regular";
+
 @font-face {
     font-family: "IBMPlexSansThai-Regular";
     src: url(fonts/IBMPlexSansThai-Regular.ttf);
 }
-$IBMPlexSansThai-SemiBold: "IBMPlexSansThai-SemiBold";
+$IBMPlexSansThai-Regular: "IBMPlexSansThai-Regular";
+
+
 @font-face {
     font-family: "IBMPlexSansThai-SemiBold";
     src: url(fonts/IBMPlexSansThai-SemiBold.ttf);
 }
-$IBMPlexSansThai-Medium: "IBMPlexSansThai-Medium";
+$IBMPlexSansThai-SemiBold: "IBMPlexSansThai-SemiBold";
+
+
 @font-face {
     font-family: "IBMPlexSansThai-Medium";
     src: url(fonts/IBMPlexSansThai-Medium.ttf);
 }
-$IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
+$IBMPlexSansThai-Medium: "IBMPlexSansThai-Medium";
+
+
 @font-face {
-    font-family: "IBMPlexSansThai-Medium";
+    font-family: "IBMPlexSansThai-Looped-Regular";
     src: url(fonts/IBMPlexSansThaiLooped-Regular.ttf);
 }
+$IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
 .H1_semi_bold {
-    font-family: $IBMPlexSansThai-SemiBold;
-    font-size: 2.25rem;
-    line-height: 3.25rem;
+	font-family: $IBMPlexSansThai-SemiBold;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 2.25rem;
+	line-height: 3.25rem;
 }
 .H1_reg {
-    font-family: $IBMPlexSansThai-Regular;
-    font-size: 2.25rem;
-    line-height: 3.25rem;
+	font-family: $IBMPlexSansThai-Regular;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.25rem;
+	line-height: 3.25rem;
 }
 .H2_semi_bold {
-    font-family: $IBMPlexSansThai-SemiBold;
-    font-size: 2rem;
-    line-height: 3rem;
+	font-family: $IBMPlexSansThai-SemiBold;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 2rem;
+	line-height: 3rem;
 }
 .H2_reg {
-    font-family: $IBMPlexSansThai-Regular;
-    font-size: 2rem;
-    line-height: 3rem;
+	font-family: $IBMPlexSansThai-Regular;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+.H3_semi_bold {
+	font-family: $IBMPlexSansThai-SemiBold;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+.H3_reg {
+	font-family: $IBMPlexSansThai-Regular;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 }
 .S1_med {
-    font-family: $IBMPlexSansThai-Medium;
-    font-size: 1.75rem;
-    line-height: 2.625rem;
+	font-family: $IBMPlexSansThai-Medium;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.75rem;
+	line-height: 2.625rem;
 }
 .S1_reg {
-    font-family: $IBMPlexSansThai-Regular;
-    font-size: 1.75rem;
-    line-height: 2.625rem;
+	font-family: $IBMPlexSansThai-Regular;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.75rem;
+	line-height: 2.625rem;
 }
 .S2_med {
-    font-family: $IBMPlexSansThai-Medium;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+	font-family: $IBMPlexSansThai-Medium;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 }
 .S2_reg {
-    font-family: $IBMPlexSansThai-Regular;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+	font-family: $IBMPlexSansThai-Regular;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 }
 .body_med {
-    font-family: $IBMPlexSansThai-Medium;
-    font-size: 1rem;
-    line-height: 1.65rem;
+	font-family: $IBMPlexSansThai-Medium;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	line-height: 1.65rem;
+	letter-spacing: -0.005em;
 }
 .body_reg {
-    font-family: $IBMPlexSansThai-Regular;
-    font-size: 1rem;
-    line-height: 1.65rem;
+	font-family: $IBMPlexSansThai-Regular;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	line-height: 1.65rem;
+	letter-spacing: -0.005em;
 }
 .body_reg_looped {
-    font-family: $IBMPlexSansThai-Looped-Regular;
-    font-size: 1rem;
-    line-height: 1.65rem;
+	font-family: $IBMPlexSansThai-Looped-Regular;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	line-height: 1.65rem;
 }
 .button_semi_bold {
-    font-family: $IBMPlexSansThai-SemiBold;
-    font-size: 1rem;
-    line-height: 1.65rem;
+	font-family: $IBMPlexSansThai-SemiBold;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1rem;
+	line-height: 1.65rem;
+	letter-spacing: 0.04em;
 }
 .overline_semi_bold {
-    font-family: $IBMPlexSansThai-SemiBold;
-    font-size: 0.75rem;
-    line-height: 1.238rem;
+	font-family: $IBMPlexSansThai-SemiBold;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 0.75rem;
+	line-height: 1.238rem;
+	letter-spacing: 0.06em;
 }
 .caption_med {
-    font-family: $IBMPlexSansThai-Medium;
-    font-size: 0.75rem;
-    line-height: 1.238rem;
+	font-family: $IBMPlexSansThai-Medium;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 0.75rem;
+	line-height: 1.238rem;
 }
 
 .form_floating {
-    position: relative;
-    margin-top: 1.75rem;
-    font-family: $IBMPlexSansThai-Regular;
-    input {
-        font-family: $IBMPlexSansThai-Regular;
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-        line-height: 1.65rem;
-        border: 0.125rem solid var(--color-default-secondary);
-        box-sizing: border-box;
-        border-radius: 1rem;
-        width: 100%;
-        margin: 0;
-        outline: none;
-        &::placeholder {
-            opacity: 0;
-        }
-        &:focus {
-            border: 0.125rem solid var(--color-secondary);
-        }
-        &:hover {
-            border: 0.125rem solid var(--color-hover-secondary);
-        }
-        &:focus ~ label,
-        &:not(:placeholder-shown) ~ label {
-            font-size: 0.75rem;
-            line-height: 1.25rem;
-            color: var(--color-secondary);
-            transform: translateX(-1rem) translateY(-2.25rem);
-        }
+	position: relative;
+	margin-top: 1.75rem;
+	input {
+		padding: 0.5rem 1rem;
+		border: 0.125rem solid var(--color-default-secondary);
+		box-sizing: border-box;
+		border-radius: 1rem;
+		width: 100%;
+		margin: 0;
+		outline: none;
+		@extend .body_reg;
+		&::placeholder {
+			opacity: 0;
+		}
+		&:focus {
+			border: 0.125rem solid var(--color-secondary);
+		}
+		&:hover {
+			border: 0.125rem solid var(--color-hover-secondary);
+		}
+		&:focus ~ label,
+		&:not(:placeholder-shown) ~ label {
+			color: var(--color-secondary);
+			transform: translateX(-1rem) translateY(-2.25rem);
+			@extend .caption_med;
+		}
 
-        &:disabled {
-            border: 0.125rem solid var(--color-on-surface-disabled);
-            background-color: var(--color-surface-disabled);
-            color: var(--color-on-surface-disabled);
-        }
+		&:disabled {
+			border: 0.125rem solid var(--color-on-surface-disabled);
+			background-color: var(--color-surface-disabled);
+			color: var(--color-on-surface-disabled);
+		}
 
-        &:disabled ~ label {
-            color: var(--color-on-surface-disabled);
-        }
-    }
-    label {
-        font-family: $IBMPlexSansThai-Regular;
-        top: 0.875rem;
-        left: 1rem;
-        position: absolute;
-        font-size: 1rem;
-        pointer-events: none;
-        transform-origin: 0 0;
-        transition: 0.2s cubic-bezier(1, 0, 0, 1);
-        color: var(--color-on-surface-disabled);
-    }
+		&:disabled ~ label {
+			color: var(--color-on-surface-disabled);
+		}
+	}
+	label {
+		top: 0.7rem;
+		left: 1rem;
+		position: absolute;
+		pointer-events: none;
+		transform-origin: 0 0;
+		transition: 0.2s cubic-bezier(1, 0, 0, 1);
+		color: var(--color-on-surface-disabled);
+		@extend .body_reg;
+	}
 }
 
 .form_error {
-    input {
-        border: 0.125rem solid var(--color-error);
-        &:focus ~ label,
-        &:not(:placeholder-shown) ~ label {
-            color: var(--color-error);
-        }
-    }
-    .error_message {
-        font-family: $IBMPlexSansThai-Regular;
-        font-size: 0.75rem;
-        line-height: 1.25rem;
-        color: var(--color-error);
-        margin-left: 1rem;
-    }
+	input {
+		border: 0.125rem solid var(--color-error);
+		&:focus {
+			border: 0.125rem solid var(--color-error);
+		}
+		&:focus ~ label,
+		&:not(:placeholder-shown) ~ label {
+			color: var(--color-error);
+		}
+	}
+	.error_message {
+		color: var(--color-error);
+		margin-left: 1rem;
+		@extend .caption_med;
+	}
 }
 
 .form_input_opt {
-    text-align: center;
-    input {
-        text-align: center;
-        width: 2rem;
-        font-size: 1.125rem;
-        background-color: var(--color-on-success);
-        border: 0.125rem solid var(--color-on-surface-disabled);
-        box-sizing: border-box;
-        border-radius: 0.5rem;
-        line-height: 1.875rem;
-        margin: 0 0.5rem;
-        outline: none;
-        color: var(--color-on-primary-container);
-        &:focus,
-        &:valid,
-        .validated {
-            border-color: var(--color-secondary);
-        }
-        &:disabled {
-            border-color: var(--color-on-surface-disabled);
-            background-color: var(--color-surface-disabled);
-        }
-    }
+	text-align: center;
+	input {
+        padding: 0.25rem 0.5rem;
+		text-align: center;
+		width: 2rem;
+		background-color: var(--color-on-success);
+		border: 0.125rem solid var(--color-on-surface-disabled);
+		box-sizing: border-box;
+		border-radius: 0.5rem;
+		margin: 0 0.5rem;
+		outline: none;
+		color: var(--color-on-primary-container);
+		@extend .body_med;
+		&:focus,
+		&:valid,
+		.validated {
+			border-color: var(--color-secondary);
+		}
+		&:disabled {
+			border-color: var(--color-on-surface-disabled);
+			background-color: var(--color-surface-disabled);
+		}
+	}
 }
 
 .form_input_pin {
@@ -225,10 +275,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         border: 0.125rem solid var(--color-default-secondary);
         box-sizing: border-box;
         border-radius: 1rem;
-        font-size: 1rem;
-        line-height: 1.65rem;
         background: var(--color-background);
-        font-family: $IBMPlexSansThai-Regular;
         color: var(--color-on-secondary-container);
         background-image: url("./assets/icon/expand_more_24px.svg");
         background-repeat: no-repeat;
@@ -241,6 +288,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         -o-transition: $transition;
         -ms-transition: $transition;
         transition: $transition;
+        @extend .body_reg;
         &:hover {
             border-color: var(--color-hover-secondary);
             -webkit-transition: $transition;
@@ -266,10 +314,8 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         }
     }
     label {
-        font-size: 0.75rem;
-        line-height: 1.25rem;
-        font-family: $IBMPlexSansThai-Regular;
         color: var(--color-secondary);
+        @extend .caption_med;
     }
     .label-disable {
         color: var(--color-on-surface-disabled);
@@ -285,25 +331,21 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         color: var(--color-error);
     }
     .error_message {
-        font-family: $IBMPlexSansThai-Regular;
-        font-size: 0.75rem;
-        line-height: 1.25rem;
         color: var(--color-error);
         margin-left: 1rem;
+        @extend .caption_med;
     }
 }
 
 .btn {
-    font-family: $IBMPlexSansThai-SemiBold;
     align-items: center;
     padding: 0.5rem 1.5rem;
     border: 0.063rem solid transparent;
     border-radius: 0.5rem;
-    font-size: 1rem;
-    line-height: 1.65rem;
     outline: none;
     margin: 0;
     cursor: pointer;
+    @extend .button_semi_bold;
     -webkit-transition: $transition;
     -moz-transition: $transition;
     -o-transition: $transition;
@@ -396,11 +438,9 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 
     .form_check_label {
-        font-family: $IBMPlexSansThai-Regular;
-        font-size: 1rem;
-        line-height: 1.65rem;
         margin-left: 1.188rem;
         display: block;
+        @extend .body_reg;
     }
 }
 
@@ -437,11 +477,9 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
     
     .form_radio_label {
-        font-family: $IBMPlexSansThai-Regular;
-        font-size: 1rem;
-        line-height: 1.65rem;
         margin-left: 1.188rem;
         display: block;
+        @extend .body_reg;
     }
 }
 
@@ -526,28 +564,23 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         text-align: left;
         padding-right: 1rem;
         .toast_tittle {
-            font-family: $IBMPlexSansThai-Medium;
             margin-top: 0;
             margin-bottom: 0;
-            font-size: 1rem;
-            line-height: 1.65rem;
+            @extend .body_med;
         }
         .toast_description {
-            font-family: $IBMPlexSansThai-Regular;
             margin-top: 0;
             margin-bottom: 0;
-            font-size: 1rem;
-            line-height: 1.65rem;
+            @extend .body_reg;
         }
         .btn_link {
             cursor: pointer;
             outline: none;
             background-color: var(--color-transparent);
             border: none;
-            font-size: 1rem;
-            font-family: $IBMPlexSansThai-SemiBold;
             padding: 0;
             height: 1.625rem;
+            @extend .button_semi_bold;
             &:active {
                 -webkit-tap-highlight-color: var(--color-transparent);
             }
@@ -635,6 +668,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         }
     }
 }
+
 .toast_error {
     color: var(--color-on-error-container);
     background-color: var(--color-error-container);
@@ -741,7 +775,6 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     width: 100%;
     opacity: 0;
     height: 100%;
-
     z-index: 99999 !important;
 }
 .pop_up_dialog {
@@ -758,18 +791,14 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         background: white;
         .pop_up_header {
             text-align: center;
-            font-family: $IBMPlexSansThai-Medium;
-            font-size: 1.25rem;
-            line-height: 1.75rem;
             color: var(--color-secondary);
             margin-bottom: 1rem;
+            @extend .S2_med;
         }
         .pop_up_body {
-            font-family: $IBMPlexSansThai-Regular;
             text-align: center;
-            font-size: 1rem;
-            line-height: 1.65rem;
             margin-bottom: 1.5rem;
+            @extend .body_reg;
         }
         .pop_up_footer {
             button {
