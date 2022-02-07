@@ -242,7 +242,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         box-sizing: border-box;
         border-radius: 1rem;
         background: var(--color-background);
-        color: var(--color-on-secondary-container);
+        color: var(--color-on-surface-disabled);
         background-image: url("./assets/icon/expand_more_24px.svg");
         background-repeat: no-repeat;
         background-position: right 1.375rem center;
@@ -281,15 +281,18 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
         &:not([value=""]):valid{
             margin-top: 3rem;
+            color: var(--color-on-secondary-container);
         }
         &:not([value=""]):valid ~ label
         {
+            opacity: 1;
+            color: var(--color-secondary);
             transform: translateX(-1rem) translateY(-2.25rem);
-           
             @extend .caption_med;
         }
     }
     label {
+        opacity: 0;
         position: absolute;
         left: 1.125rem;
         top: 0.625rem;

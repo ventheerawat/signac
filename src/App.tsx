@@ -531,9 +531,18 @@ const LoaderToggle = () => {
                       <Grid container spacing={2}>
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
+                          <div className='form_select'>
+                              <select id='formselect' defaultValue={''} required>
+                                <option value="" disabled>เพศ</option>
+                                <option value="1">ชาย</option>
+                                <option value="2">หญิง</option>
+                                <option value="3">ไม่ระบุ</option>
+                              </select>
+                              <label htmlFor="formselect">เพศ</label>
+                            </div>
                             <div className='form_select'>
                               <select id='formselect' defaultValue={''} required>
-                                <option value="">วันเกิด</option>
+                                <option value="" disabled>วันเกิด</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
