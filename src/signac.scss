@@ -13,20 +13,17 @@ $transition: all 0.2s ease;
 }
 $IBMPlexSansThai-Regular: "IBMPlexSansThai-Regular";
 
-
 @font-face {
     font-family: "IBMPlexSansThai-SemiBold";
     src: url(fonts/IBMPlexSansThai-SemiBold.ttf);
 }
 $IBMPlexSansThai-SemiBold: "IBMPlexSansThai-SemiBold";
 
-
 @font-face {
     font-family: "IBMPlexSansThai-Medium";
     src: url(fonts/IBMPlexSansThai-Medium.ttf);
 }
 $IBMPlexSansThai-Medium: "IBMPlexSansThai-Medium";
-
 
 @font-face {
     font-family: "IBMPlexSansThai-Looped-Regular";
@@ -35,233 +32,202 @@ $IBMPlexSansThai-Medium: "IBMPlexSansThai-Medium";
 $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
 .H1_semi_bold {
-	font-family: $IBMPlexSansThai-SemiBold;
-	font-weight: 600;
-	font-style: normal;
-	font-size: 2.25rem;
-	line-height: 3.25rem;
+    font-family: $IBMPlexSansThai-SemiBold;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
 }
 .H1_reg {
-	font-family: $IBMPlexSansThai-Regular;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 2.25rem;
-	line-height: 3.25rem;
+    font-family: $IBMPlexSansThai-Regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
 }
 .H2_semi_bold {
-	font-family: $IBMPlexSansThai-SemiBold;
-	font-weight: 600;
-	font-style: normal;
-	font-size: 2rem;
-	line-height: 3rem;
+    font-family: $IBMPlexSansThai-SemiBold;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 .H2_reg {
-	font-family: $IBMPlexSansThai-Regular;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 2rem;
-	line-height: 3rem;
+    font-family: $IBMPlexSansThai-Regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 .H3_semi_bold {
-	font-family: $IBMPlexSansThai-SemiBold;
-	font-weight: 600;
-	font-style: normal;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
+    font-family: $IBMPlexSansThai-SemiBold;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 .H3_reg {
-	font-family: $IBMPlexSansThai-Regular;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
+    font-family: $IBMPlexSansThai-Regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 .S1_med {
-	font-family: $IBMPlexSansThai-Medium;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 1.75rem;
-	line-height: 2.625rem;
+    font-family: $IBMPlexSansThai-Medium;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.75rem;
+    line-height: 2.625rem;
 }
 .S1_reg {
-	font-family: $IBMPlexSansThai-Regular;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1.75rem;
-	line-height: 2.625rem;
+    font-family: $IBMPlexSansThai-Regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75rem;
+    line-height: 2.625rem;
 }
 .S2_med {
-	font-family: $IBMPlexSansThai-Medium;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
+    font-family: $IBMPlexSansThai-Medium;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 .S2_reg {
-	font-family: $IBMPlexSansThai-Regular;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
+    font-family: $IBMPlexSansThai-Regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 .body_med {
-	font-family: $IBMPlexSansThai-Medium;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1rem;
-	line-height: 1.65rem;
-	letter-spacing: -0.005em;
+    font-family: $IBMPlexSansThai-Medium;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.65rem;
+    letter-spacing: -0.005em;
 }
 .body_reg {
-	font-family: $IBMPlexSansThai-Regular;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1rem;
-	line-height: 1.65rem;
-	letter-spacing: -0.005em;
+    font-family: $IBMPlexSansThai-Regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.65rem;
+    letter-spacing: -0.005em;
 }
 .body_reg_looped {
-	font-family: $IBMPlexSansThai-Looped-Regular;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1rem;
-	line-height: 1.65rem;
+    font-family: $IBMPlexSansThai-Looped-Regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.65rem;
 }
 .button_semi_bold {
-	font-family: $IBMPlexSansThai-SemiBold;
-	font-weight: 600;
-	font-style: normal;
-	font-size: 1rem;
-	line-height: 1.65rem;
-	letter-spacing: 0.04em;
+    font-family: $IBMPlexSansThai-SemiBold;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.65rem;
+    letter-spacing: 0.04em;
 }
 .overline_semi_bold {
-	font-family: $IBMPlexSansThai-SemiBold;
-	font-weight: 600;
-	font-style: normal;
-	font-size: 0.75rem;
-	line-height: 1.238rem;
-	letter-spacing: 0.06em;
+    font-family: $IBMPlexSansThai-SemiBold;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.75rem;
+    line-height: 1.238rem;
+    letter-spacing: 0.06em;
 }
 .caption_med {
-	font-family: $IBMPlexSansThai-Medium;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 0.75rem;
-	line-height: 1.238rem;
+    font-family: $IBMPlexSansThai-Medium;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.75rem;
+    line-height: 1.238rem;
 }
 
 .form_floating {
-	position: relative;
-	margin-top: 1.75rem;
-	input {
-		padding: 0.5rem 1rem;
-		border: 0.125rem solid var(--color-default-secondary);
-		box-sizing: border-box;
-		border-radius: 1rem;
-		width: 100%;
-		margin: 0;
-		outline: none;
-		@extend .body_reg;
-		&::placeholder {
-			opacity: 0;
-		}
-		&:focus {
-			border: 0.125rem solid var(--color-secondary);
-		}
-		&:hover {
-			border: 0.125rem solid var(--color-hover-secondary);
-		}
-		&:focus ~ label,
-		&:not(:placeholder-shown) ~ label {
-			color: var(--color-secondary);
-			transform: translateX(-1rem) translateY(-2.25rem);
-			@extend .caption_med;
-		}
+    position: relative;
+    input {
+        padding: 0.5rem 1rem;
+        border: 0.125rem solid var(--color-default-secondary);
+        box-sizing: border-box;
+        border-radius: 1rem;
+        width: 100%;
+        margin: 0;
+        outline: none;
+        margin-top: 1.5rem;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+        -o-transition: $transition;
+        -ms-transition: $transition;
+        transition: $transition;
+        @extend .body_reg;
+        &::placeholder {
+            opacity: 0;
+        }
+        &:focus {
+            border: 0.125rem solid var(--color-secondary);
+            margin-top: 3rem;
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -o-transition: $transition;
+            -ms-transition: $transition;
+            transition: $transition;
+        }
+        &:hover {
+            border: 0.125rem solid var(--color-hover-secondary);
+        }
+        &:focus ~ label,
+        &:not(:placeholder-shown) ~ label {
+            color: var(--color-secondary);
+            transform: translateX(-1rem) translateY(-1rem);
+            @extend .caption_med;
+        }
 
-		&:disabled {
-			border: 0.125rem solid var(--color-on-surface-disabled);
-			background-color: var(--color-surface-disabled);
-			color: var(--color-on-surface-disabled);
-		}
+        &:not(:placeholder-shown) {
+            margin-top: 3rem;
+        }
 
-		&:disabled ~ label {
-			color: var(--color-on-surface-disabled);
-		}
-	}
-	label {
-		top: 0.7rem;
-		left: 1rem;
-		position: absolute;
-		pointer-events: none;
-		transform-origin: 0 0;
-		transition: 0.2s cubic-bezier(1, 0, 0, 1);
-		color: var(--color-on-surface-disabled);
-		@extend .body_reg;
-	}
+        &:disabled {
+            border: 0.125rem solid var(--color-on-surface-disabled);
+            background-color: var(--color-surface-disabled);
+            color: var(--color-on-surface-disabled);
+        }
+
+        &:disabled ~ label {
+            color: var(--color-on-surface-disabled);
+        }
+    }
+    label {
+        top: 2.25rem;
+        left: 1rem;
+        position: absolute;
+        pointer-events: none;
+        transform-origin: 0 0;
+        transition: 0.2s cubic-bezier(1, 0, 0, 1);
+        color: var(--color-on-surface-disabled);
+        @extend .body_reg;
+    }
 }
 
 .form_error {
-	input {
-		border: 0.125rem solid var(--color-error);
-		&:focus {
-			border: 0.125rem solid var(--color-error);
-		}
-		&:focus ~ label,
-		&:not(:placeholder-shown) ~ label {
-			color: var(--color-error);
-		}
-	}
-	.error_message {
-		color: var(--color-error);
-		margin-left: 1rem;
-		@extend .caption_med;
-	}
-}
-
-.form_input_opt {
-	text-align: center;
-	input {
-        padding: 0.25rem 0.5rem;
-		text-align: center;
-		width: 2rem;
-		background-color: var(--color-on-success);
-		border: 0.125rem solid var(--color-on-surface-disabled);
-		box-sizing: border-box;
-		border-radius: 0.5rem;
-		margin: 0 0.5rem;
-		outline: none;
-		color: var(--color-on-primary-container);
-		@extend .body_med;
-		&:focus,
-		&:valid,
-		.validated {
-			border-color: var(--color-secondary);
-		}
-		&:disabled {
-			border-color: var(--color-on-surface-disabled);
-			background-color: var(--color-surface-disabled);
-		}
-	}
-}
-
-.form_input_pin {
-    text-align: center;
-    span {
-        display: inline-block;
-        width: 1rem;
-        height: 1rem;
-        background-color: var(--color-on-success);
-        border-radius: 1rem;
-        border: 0.125rem solid var(--color-secondary);
-        margin: 0 0.5rem;
+    input {
+        border: 0.125rem solid var(--color-error);
+        &:focus {
+            border: 0.125rem solid var(--color-error);
+        }
+        &:focus ~ label,
+        &:not(:placeholder-shown) ~ label {
+            color: var(--color-error);
+        }
     }
-    .validated {
-        background-color: var(--color-secondary);
-    }
-    .disabled {
-        border-color: var(--color-on-surface-disabled);
-        background-color: var(--color-surface-disabled);
+    .error_message {
+        color: var(--color-error);
+        margin-left: 1rem;
+        @extend .caption_med;
     }
 }
 
@@ -269,7 +235,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     position: relative;
     select {
         display: block;
-        margin-top: 0.5rem;
+        margin-top: 1.5rem;
         width: 100%;
         padding: 0.5rem 1rem;
         border: 0.125rem solid var(--color-default-secondary);
@@ -312,10 +278,31 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             border-color: var(--color-on-surface-disabled);
             color: var(--color-on-surface-disabled);
         }
+
+        &:not([value=""]):valid{
+            margin-top: 3rem;
+        }
+        &:not([value=""]):valid ~ label
+        {
+            transform: translateX(-1rem) translateY(-2.25rem);
+           
+            @extend .caption_med;
+        }
     }
     label {
-        color: var(--color-secondary);
-        @extend .caption_med;
+        position: absolute;
+        left: 1.125rem;
+        top: 0.625rem;
+        pointer-events: none;
+        transform-origin: 0 0;
+        transition: 0.2s cubic-bezier(1, 0, 0, 1);
+        color: var(--color-on-surface-disabled);
+        @extend .body_reg;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+        -o-transition: $transition;
+        -ms-transition: $transition;
+        transition: $transition;
     }
     .label-disable {
         color: var(--color-on-surface-disabled);
@@ -334,6 +321,52 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         color: var(--color-error);
         margin-left: 1rem;
         @extend .caption_med;
+    }
+}
+
+.form_input_opt {
+    text-align: center;
+    input {
+        padding: 0.25rem 0.5rem;
+        text-align: center;
+        width: 2rem;
+        background-color: var(--color-on-success);
+        border: 0.125rem solid var(--color-on-surface-disabled);
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        margin: 0 0.5rem;
+        outline: none;
+        color: var(--color-on-primary-container);
+        @extend .body_med;
+        &:focus,
+        &:valid,
+        .validated {
+            border-color: var(--color-secondary);
+        }
+        &:disabled {
+            border-color: var(--color-on-surface-disabled);
+            background-color: var(--color-surface-disabled);
+        }
+    }
+}
+
+.form_input_pin {
+    text-align: center;
+    span {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background-color: var(--color-on-success);
+        border-radius: 1rem;
+        border: 0.125rem solid var(--color-secondary);
+        margin: 0 0.5rem;
+    }
+    .validated {
+        background-color: var(--color-secondary);
+    }
+    .disabled {
+        border-color: var(--color-on-surface-disabled);
+        background-color: var(--color-surface-disabled);
     }
 }
 
@@ -366,14 +399,13 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         background-color: var(--color-pressed-secondary);
         -webkit-tap-highlight-color: var(--color-transparent);
     }
-    
+
     &:disabled {
         cursor: default;
         color: var(--color-on-surface-disabled);
         background-color: var(--color-surface-disabled);
     }
 }
-
 
 .w-100 {
     width: 100%;
@@ -393,7 +425,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         color: var(--color-pressed-secondary);
         background-color: var(--color-transparent);
     }
-    
+
     &:disabled {
         cursor: default;
         border: 0.125rem solid var(--color-surface-disabled);
@@ -401,7 +433,6 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         background-color: var(--color-transparent);
     }
 }
-
 
 .form_check {
     display: block;
@@ -475,7 +506,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             border: 0.125rem solid var(--color-on-surface-disabled);
         }
     }
-    
+
     .form_radio_label {
         margin-left: 1.188rem;
         display: block;
@@ -585,7 +616,6 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
                 -webkit-tap-highlight-color: var(--color-transparent);
             }
         }
-        
     }
     .close {
         position: absolute;

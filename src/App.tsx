@@ -109,6 +109,14 @@ const LoaderToggle = () => {
                   <Item sx={{ boxShadow: 0 }}>
                     <div className='form_floating h1-semi-bold'>
                       <input type="text" id='idcard' placeholder='Textfield label' />
+                      <label htmlFor="idcard">เลขบัตรประชาชน</label>
+                    </div>
+                    <div className='form_floating h1-semi-bold'>
+                      <input type="text" id='idcard' placeholder='Textfield label' />
+                      <label htmlFor="idcard">Textfield label</label>
+                    </div>
+                    <div className='form_floating h1-semi-bold'>
+                      <input type="text" id='idcard' placeholder='Textfield label' />
                       <label htmlFor="idcard">Textfield label</label>
                     </div>
                   </Item>
@@ -136,6 +144,11 @@ const LoaderToggle = () => {
                 <small>The input is not vilidate please add the className '.form_error' in div tag</small>
                 <Grid item xs={12} md={4} lg={3} >
                   <Item sx={{ boxShadow: 0 }}>
+                    <div className='form_floating form_error'>
+                      <input type="text" id='idcard' placeholder='Textfield label' defaultValue={'Input Text'} />
+                      <label htmlFor="idcard">Textfield label</label>
+                      <span className='error_message'>Error message</span>
+                    </div>
                     <div className='form_floating form_error'>
                       <input type="text" id='idcard' placeholder='Textfield label' defaultValue={'Input Text'} />
                       <label htmlFor="idcard">Textfield label</label>
@@ -519,14 +532,34 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
                             <div className='form_select'>
-                              <label htmlFor="formselect">Select label</label>
-                              <select id='formselect' defaultValue={'0'} >
-                                <option value="0">Open this select menu</option>
+                              <select id='formselect' defaultValue={''} required>
+                                <option value="">วันเกิด</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                               </select>
+                              <label htmlFor="formselect">วันเกิด</label>
+                            </div>
+                            <div className='form_select'>
+                              <select id='formselect' defaultValue={''} required>
+                                <option value="">เดือนเกิด</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                              <label htmlFor="formselect">เดือนเกิด</label>
+                            </div>
+                            <div className='form_select'>
+                              <select id='formselect' defaultValue={''} required>
+                                <option value="">ปีเกิด</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                              <label htmlFor="formselect">ปีเกิด</label>
                             </div>
                           </Item>
                         </Grid>
@@ -535,16 +568,16 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form_select'>
-                           <label htmlFor="formselect">Select label</label>
-                            <select id='formselect' defaultValue={'0'} >
-                                <option value="0">Open this select menu</option> 
-                                <option value="1">1</option> 
-                                <option value="2">2</option> 
-                                <option value="3">3</option> 
-                                <option value="4">4</option> 
-                              </select>
-                          </div>
+                         <div className='form_select'>
+                         <select id='formselect' defaultValue={''} required>
+                           <option value="">วันเกิด</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                         </select>
+                         <label htmlFor="formselect">วันเกิด</label>
+                       </div>
                         `}
                         </code>
                       </pre>
@@ -558,14 +591,14 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
                             <div className='form_select form_select_error'>
-                              <label >Select disable label</label>
-                              <select id='formselect' defaultValue={'0'} >
-                                <option value="0">Open this select menu</option>
+                              <select id='formselect' defaultValue={'2'} required>
+                                <option value="">Plceholder text</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                               </select>
+                              <label>Plceholder text</label>
                               <span className='error_message'>Error message</span>
                             </div>
                           </Item>
@@ -576,17 +609,17 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form_select form_select_error'>
-                          <label >Select disable label</label>
-                            <select id='formselect' defaultValue={'0'} >
-                                <option value="0">Open this select menu</option> 
-                                <option value="1">1</option> 
-                                <option value="2">2</option> 
-                                <option value="3">3</option> 
-                                <option value="4">4</option> 
-                            </select>
-                            <span className='error_message'>Error message</span>
-                          </div>
+                         <div className='form_select form_select_error'>
+                         <select id='formselect' defaultValue={''} >
+                           <option value="">Plceholder text</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                         </select>
+                         <label>Plceholder text</label>
+                         <span className='error_message'>Error message</span>
+                       </div>
                         `}
                         </code>
                       </pre>
@@ -600,14 +633,14 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
                             <div className='form_select'>
-                              <label className='label-disable'>Select disable label</label>
                               <select id='formselect' defaultValue={'0'} disabled>
-                                <option value="0">Open this select menu</option>
+                                <option value="0">Select disable label</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                               </select>
+                              <label className='label-disable'>Select disable label</label>
                             </div>
                           </Item>
                         </Grid>
@@ -616,16 +649,16 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className='form_select'>
-                            <label className='label-disable'>Select disable label</label>
-                            <select id='formselect' defaultValue={'0'} disabled>
-                                <option value="0">Open this select menu</option> 
-                                <option value="1">1</option> 
-                                <option value="2">2</option> 
-                                <option value="3">3</option> 
-                                <option value="4">4</option> 
-                            </select>
-                          </div>
+                         <div className='form_select'>
+                         <select id='formselect' defaultValue={'0'} disabled>
+                           <option value="0">Select disable label</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                         </select>
+                         <label className='label-disable'>Select disable label</label>
+                       </div>
                         `}
                         </code>
                       </pre>
