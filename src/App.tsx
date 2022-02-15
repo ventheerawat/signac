@@ -9,6 +9,8 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
 
+
+
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
@@ -20,7 +22,6 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 function App() {
-
 const [show, showToast] = useState(''); 
 const [alert, showPopUp] = useState(''); 
 const [loader, showLoader] = useState(''); 
@@ -532,43 +533,43 @@ const LoaderToggle = () => {
                         <Grid item xs={12} md={4}>
                           <Item sx={{ boxShadow: 0 }}>
                           <div className='form_select'>
-                              <select id='formselect' defaultValue={''} required>
+                              <select id='formselectgender' defaultValue={''} required>
                                 <option value="" disabled>เพศ</option>
                                 <option value="1">ชาย</option>
                                 <option value="2">หญิง</option>
                                 <option value="3">ไม่ระบุ</option>
                               </select>
-                              <label htmlFor="formselect">เพศ</label>
+                              <label htmlFor="formselectgender">เพศ</label>
                             </div>
                             <div className='form_select'>
-                              <select id='formselect' defaultValue={''} required>
+                              <select id='formselectday' defaultValue={''} required>
                                 <option value="" disabled>วันเกิด</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                               </select>
-                              <label htmlFor="formselect">วันเกิด</label>
+                              <label htmlFor="formselectday">วันเกิด</label>
                             </div>
                             <div className='form_select'>
-                              <select id='formselect' defaultValue={''} required>
+                              <select id='formselectmont' defaultValue={''} required>
                                 <option value="">เดือนเกิด</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                               </select>
-                              <label htmlFor="formselect">เดือนเกิด</label>
+                              <label htmlFor="formselectmont">เดือนเกิด</label>
                             </div>
                             <div className='form_select'>
-                              <select id='formselect' defaultValue={''} required>
+                              <select id='formselectyear' defaultValue={''} required>
                                 <option value="">ปีเกิด</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                               </select>
-                              <label htmlFor="formselect">ปีเกิด</label>
+                              <label htmlFor="formselectyear">ปีเกิด</label>
                             </div>
                           </Item>
                         </Grid>
@@ -1339,6 +1340,50 @@ const LoaderToggle = () => {
                           {`
                          <div className={'loader_overlay animated ' + (loader === '1' ? 'fadeIn' : '')}>
                           <div className='loader center'><span></span></div>
+                        </div>
+                        `}
+                        </code>
+                      </pre>
+                    </Item>
+                  </Grid>
+                </Grid>
+              </Item>
+            </Grid>
+            <Grid item xs={12}>
+              <Item sx={{ boxShadow: 0 }}>
+                <hr />
+                <h1>Switch Button </h1>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={12}>
+                    <Item sx={{ boxShadow: 0 }}>
+                      <Grid container spacing={2}>
+                      <Grid item xs={12} md={12}>
+                        <Item sx={{ boxShadow: 0 }}>
+                          <Grid container spacing={2} >
+                            <Grid item xs={12} md={2}>
+                              <Item sx={{ boxShadow: 0 ,textAlign: 'center'}}>
+                              <div className="switch_toggle">
+                                <input id="on-select" name="view" type="radio" defaultValue={'en'}  defaultChecked />
+                                <label htmlFor="on-select">EN</label>
+                                <input id="off-select" name="view" type="radio" defaultValue={'th'}  />
+                                <label htmlFor="off-select">ไทย</label>
+                              </div>
+                              </Item>
+                            </Grid>
+                          </Grid>
+                        
+                        </Item>
+                      </Grid>
+                    </Grid>
+                      <br />
+                      <pre>
+                        <code className='language-html'>
+                          {`
+                        <div className="switch_toggle">
+                          <input id="on-select" name="view" type="radio" defaultValue={'en'}  defaultChecked />
+                          <label htmlFor="on-select">EN</label>
+                          <input id="off-select" name="view" type="radio" defaultValue={'th'}  />
+                          <label htmlFor="off-select">ไทย</label>
                         </div>
                         `}
                         </code>
