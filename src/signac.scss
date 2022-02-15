@@ -374,8 +374,10 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 }
 
 .btn {
+    width: 100%;
+    max-height: 2.625rem;
     align-items: center;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0;
     border: 0.063rem solid transparent;
     border-radius: 0.5rem;
     outline: none;
@@ -1060,13 +1062,14 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
 
 
 .switch_toggle{
+    max-height: 2.125rem;
     background-color: var(--color-secondary-container);
     border-radius: 1rem;
     border: 0.063rem solid var(--color-secondary);
     display: flex;
     input {
-      position: absolute;
       appearance: none;
+      display: none;
       &:checked+label {
         color: var(--color-on-secondary);
         background-color: var(--color-secondary);
@@ -1096,7 +1099,7 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     @keyframes toggle {
         0% {
             opacity: 0;
-            width: 1%;
+            width: 50%;
             transform: scale(0);
         }
         100% {
@@ -1105,4 +1108,30 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
             transform: scale(1);
         }
       }
+  }
+
+  .btn-group{
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    button{
+        border-radius: 0;
+        &:not(:first-child){
+            margin-left: -2px;
+        }
+        &:first-child{
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        &:last-child{
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        
+    }
+    .active{
+        background-color: var(--color-success-container);
+    }
+
   }

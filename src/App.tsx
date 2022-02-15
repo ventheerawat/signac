@@ -1359,8 +1359,8 @@ const LoaderToggle = () => {
                       <Grid container spacing={2}>
                       <Grid item xs={12} md={12}>
                         <Item sx={{ boxShadow: 0 }}>
-                          <Grid container spacing={2} >
-                            <Grid item xs={12} md={2}>
+                          <Grid container spacing={2}>
+                            <Grid item xs={12} md={4}>
                               <Item sx={{ boxShadow: 0 ,textAlign: 'center'}}>
                               <div className="switch_toggle">
                                 <input id="on-select" name="view" type="radio" defaultValue={'en'}  defaultChecked />
@@ -1393,6 +1393,50 @@ const LoaderToggle = () => {
                 </Grid>
               </Item>
             </Grid>
+
+            <Grid item xs={12}>
+              <Item sx={{ boxShadow: 0 }}>
+                <hr />
+                <h1>Button group</h1>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={12}>
+                    <Item sx={{ boxShadow: 0 }}>
+                      <Grid container spacing={2}>
+                      <Grid item xs={12} md={12}>
+                        <Item sx={{ boxShadow: 0 }}>
+                          <Grid container spacing={2}>
+                            <Grid item xs={12} md={12}>
+                              <Item sx={{ boxShadow: 0 ,textAlign: 'center'}}>
+                              <div className="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" className="btn btn_secondary active">บาร์โค้ด</button>
+                                <button type="button" className="btn btn_secondary">คิวอาร์</button>
+                                <button type="button" className="btn btn_secondary">โค้ด</button>
+                              </div>
+                              </Item>
+                            </Grid>
+                          </Grid>
+                        
+                        </Item>
+                      </Grid>
+                    </Grid>
+                      <br />
+                      <pre>
+                        <code className='language-html'>
+                          {`
+                        <div className="btn-group" role="group" aria-label="Basic outlined example">
+                          <button type="button" className="btn btn_secondary active">บาร์โค้ด</button>
+                          <button type="button" className="btn btn_secondary">คิวอาร์</button>
+                          <button type="button" className="btn btn_secondary">โค้ด</button>
+                        </div>
+                        `}
+                        </code>
+                      </pre>
+                    </Item>
+                  </Grid>
+                </Grid>
+              </Item>
+            </Grid>
+
           </Grid>
 
         </Box>
