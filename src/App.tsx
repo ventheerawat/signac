@@ -1363,11 +1363,17 @@ const LoaderToggle = () => {
                             <Grid item xs={12} md={4}>
                               <Item sx={{ boxShadow: 0 ,textAlign: 'center'}}>
                               <div className="switch_toggle">
-                                <input id="on-select" name="view" type="radio" defaultValue={'en'}  defaultChecked />
-                                <label htmlFor="on-select">EN</label>
-                                <input id="off-select" name="view" type="radio" defaultValue={'th'}  />
-                                <label htmlFor="off-select">ไทย</label>
+                                <div className="switch_toggle__item">
+                                  <input className="switch_toggle__input" type="radio" name="switch_toggle-name" id="radio-1"   />
+                                  <label className="switch_toggle__label" htmlFor="radio-1">EN</label>
+                                </div>
+                                <div className="switch_toggle__item">
+                                  <input className="switch_toggle__input" type="radio" name="switch_toggle-name" id="radio-2" defaultChecked/>
+                                  <label className="switch_toggle__label" htmlFor="radio-2">ไทย</label>
+                                  <div aria-hidden="true" className="switch_toggle__marker" />
+                                </div>
                               </div>
+
                               </Item>
                             </Grid>
                           </Grid>
@@ -1379,12 +1385,17 @@ const LoaderToggle = () => {
                       <pre>
                         <code className='language-html'>
                           {`
-                        <div className="switch_toggle">
-                          <input id="on-select" name="view" type="radio" defaultValue={'en'}  defaultChecked />
-                          <label htmlFor="on-select">EN</label>
-                          <input id="off-select" name="view" type="radio" defaultValue={'th'}  />
-                          <label htmlFor="off-select">ไทย</label>
-                        </div>
+                         <div className="switch_toggle">
+                         <div className="switch_toggle__item">
+                           <input className="switch_toggle__input" type="radio" name="switch_toggle-name" id="radio-1"  defaultChecked />
+                           <label className="switch_toggle__label" htmlFor="radio-1">EN</label>
+                         </div>
+                         <div className="switch_toggle__item">
+                           <input className="switch_toggle__input" type="radio" name="switch_toggle-name" id="radio-2"/>
+                           <label className="switch_toggle__label" htmlFor="radio-2">ไทย</label>
+                           <div aria-hidden="true" className="switch_toggle__marker" />
+                         </div>
+                       </div>
                         `}
                         </code>
                       </pre>

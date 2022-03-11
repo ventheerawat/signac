@@ -1060,56 +1060,6 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
     }
 }
 
-
-.switch_toggle{
-    max-height: 2.125rem;
-    background-color: var(--color-secondary-container);
-    border-radius: 1rem;
-    border: 0.063rem solid var(--color-secondary);
-    display: flex;
-    input {
-      appearance: none;
-      display: none;
-      &:checked+label {
-        color: var(--color-on-secondary);
-        background-color: var(--color-secondary);
-        outline: 0;
-        border-radius: 0.875rem;
-        animation: toggle .5s;
-      }
-      &+label {
-        z-index: 2;
-        width: 50%;
-        padding: 0.25rem 1rem;
-        margin: 0;
-        text-align: center;
-      }
-      
-    }
-    label {
-      border-radius: 0.875rem;
-      color: var(--color-secondary);
-      cursor: pointer;
-      &:active{
-        -webkit-tap-highlight-color: var(--color-transparent);
-      }
-      @extend .body_med;
-      
-    }
-    @keyframes toggle {
-        0% {
-            opacity: 0;
-            width: 50%;
-            transform: scale(0);
-        }
-        100% {
-            opacity: 1;
-            width: 50%;
-            transform: scale(1);
-        }
-      }
-  }
-
   .btn-group{
     width: 100%;
     position: relative;
@@ -1134,4 +1084,74 @@ $IBMPlexSansThai-Looped-Regular: "IBMPlexSansThai-Looped-Regular";
         background-color: var(--color-success-container);
     }
 
+  }
+
+  :root {
+    --switch_toggle-width: 6.625rem;
+    --switch_toggle-height: 2rem;
+    --switch_toggle-padding: 0.188rem;
+    --switch_toggle-animation-duration: 0.25s;
+  }
+  
+  .switch_toggle {
+    position: relative;
+    display: inline-block;
+    display: inline-flex;
+    padding: 0;
+    height: var(--switch_toggle-height);
+    border-radius: 1rem;
+    background: var(--color-secondary-container);
+    border: 0.063rem solid var(--color-secondary);
+  }
+  
+  .switch_toggle__item{
+    position: relative;
+    display: inline-block;
+    height: var(--switch_toggle-height);
+    width: calc(var(--switch_toggle-width)*0.5 - var(--switch_toggle-padding));
+  }
+  
+  .switch_toggle__label {
+    height: var(--switch_toggle-height);
+    position: relative;
+    color: var(--color-secondary);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.813rem;
+    cursor: pointer;
+    @extend .body_med;
+    transition: all var(--switch_toggle-animation-duration);
+    &:active{
+        -webkit-tap-highlight-color: var(--color-transparent);
+      }
+  }
+  .switch_toggle__input{
+    appearance: none;
+    display: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .switch_toggle__input:checked ~ .switch_toggle__label {
+    color: white;
+    background: var(--color-secondary);
+  }
+
+  .switch_toggle__marker {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    border-radius: 1rem;
+    background-color: var(--color-secondary);
+    height: var(--switch_toggle-height);
+    width: calc(var(--switch_toggle-width)*0.5 - var(--switch_toggle-padding));
+    transition: -webkit-transform var(--switch_toggle-animation-duration);
+    transition: transform var(--switch_toggle-animation-duration);
+    transition: transform var(--switch_toggle-animation-duration), -webkit-transform var(--switch_toggle-animation-duration);
+  }
+  .switch_toggle__input:checked ~ .switch_toggle__marker {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
